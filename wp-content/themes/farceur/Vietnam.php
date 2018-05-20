@@ -48,7 +48,7 @@ $args=array(
      </div>  
        <div id="vietnamcontent"><?php the_content('&raquo;&raquo; Read More'); ?></div>
     
-        <div class="postinfo vietnampostinfo"><span class="posthighlight"><img src="/Images/heartbullet.png" class="postheart"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> <span class="posthighlight">by </span><?php the_author_posts_link(); ?> <br /> <span class="responses"> <a href="<?php the_permalink() ?>#commentswrap">This post currently has <?php comments_number('no responses','one response','% responses'); ?></a> | <a href="<?php the_permalink() ?>#respond"> Leave a Comment </a></span></div><br />
+        <div class="postinfo vietnampostinfo"><span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> <span class="posthighlight">by </span><?php the_author_posts_link(); ?> <br /> <span class="responses"> <a href="<?php the_permalink() ?>#commentswrap">This post currently has <?php comments_number('no responses','one response','% responses'); ?></a> | <a href="<?php the_permalink() ?>#respond"> Leave a Comment </a></span></div><br />
 </div><div class="clear"></div>
   
 
@@ -62,7 +62,7 @@ $args=array(
 </div>
 
 <div id="VietnamSidebar">
-   <img src="/Images/Blog_SidekickPic.png" />
+   <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Blog_SidekickPic.png'?>" />
    <div style="background-color:#fcf3aa; padding: 0px 10px; font-size:12px; padding-bottom:10px;">
     Sidekick here! Over the next few weeks I'll be documenting Sox's and my adventures whilst travelling across Vietnam! From embracing the culture to seeing the sights, we'll be volunteering in two orphanages, a blind school and visiting parts of the country where 'the essentials of life' aren't taken for granted!    
    </div>
