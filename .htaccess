@@ -1,0 +1,39 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+#<Directory "C:\wamp\www\CCI WP">
+#AllowOverride All
+#Options +FollowSymLinks
+#</Directory>
+
+# Protect wp-config file
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+
+# Protect directory browsing
+Options All -Indexes
+
+# Prevent Hot Links from happening
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?caringclownsinternational.org [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
+
+# Protect htacess file
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>

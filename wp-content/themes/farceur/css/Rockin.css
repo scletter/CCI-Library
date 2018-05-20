@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+#MainRockin {
+	position: relative;
+}
+
+img.MainRockin {
+	width: 95%; 
+	max-width: 787px;
+	position: relative; 
+	bottom: 15px;
+}
+
+#left { position: absolute; 
+	top: 22%;
+	left: 5%;
+	text-align: left; 
+	}
+	
+#right { position: absolute; 
+	top: 22%; 
+	right: 5%;
+	text-align: right;
+	}
+	
+#left, #right {
+	width: 26%;
+	font-size: 16px;
+}
+
+.sub {
+	margin-top: 10%;
+	font-size: 14px;
+}
+
+#MainRockin .bold {
+	letter-spacing: 1px;
+}
+
+#left img.rockimg, #right img.rockimg {
+	width: 95%;
+	margin-top: 13%;
+	max-width: 224px;
+}
+
+.mygirl {
+	text-align: left; 
+	padding-left: 10px;
+	}
+	
+.mygirl a, .program a{
+	font-weight: bold; 
+	color: #CC0000;
+}
+
+.mygirl a:hover, .program a:hover {
+	text-decoration: underline; 
+}
+
+#center {
+	text-align: left; 
+	width: 30%;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	
+	text-align: center;
+
+}
+
+.smaller { font-size: 14px;}
+
+#center .bold {
+	font-size: 18px; 
+	font-color: #CC0000;
+}
+
+.program {font-size: 15px;}
+
+.tax {font-size: 12px;}

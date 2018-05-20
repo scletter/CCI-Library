@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+#accordion {
+	text-align: left;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#accordion li {
+	background-image: url(../Images/heartbullet.png);
+	background-repeat:no-repeat;
+	background-position: left 7px;
+	padding: 5px 25px;
+	margin-left: 15px;
+}
+
+ul.ourwork li {
+	margin-left: 15px;
+}
+
+ul {
+	margin: 0px; 
+	padding: 0px;
+}
+
+
+
+#aboutus {
+	text-align: left;
+	padding-top: 15px;
+	
+}
+
+#accordion h3 a{
+	text-transform: uppercase;
+	background-image: url(../Images/goarrow.png);
+	background-repeat: no-repeat;
+	background-position: left 2px;
+	padding-left: 15px;
+}
+
+.ourstorytxt {
+	padding-left: 15px;
+}
+
+.ui-state-active, .ui-state-default {
+	outline-style: none;
+}
+
+#accordion h3.ui-state-active  a{
+	background-image: url(../Images/goarrowdown.png);
+}
+
+
