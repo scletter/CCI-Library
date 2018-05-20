@@ -108,7 +108,7 @@
                                     
                     <ul class="lastul"> 
                         <li> <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a> </li>
-                        <li class="posted"> <span class="posthighlight"><img src="/Images/heartbullet.png" class="postheart" alt="heartbullet.png"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> </li>
+                        <li class="posted"> <span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart" alt="heartbullet.png"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> </li>
                     </ul><?php endwhile; ?>                                  
 				</div>                 
                 <div class="eventsbottomwrap">
