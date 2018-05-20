@@ -783,7 +783,9 @@ img.pagetitle {
 }
 
 #newsletterpage ul,
-#archivespage ul,
+#archivespage ul {
+		margin-left: 25px;
+}
 
 
 #newspage ul {
