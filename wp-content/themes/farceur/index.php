@@ -11,7 +11,7 @@
 
 <?php get_header(); ?>
 
-<img src="/Images/PageTitle_News.jpg" class="pagetitle"/>
+<img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/PageTitle_News.jpg'?>" class="pagetitle"/>
 
 <div id="newswrap">
 <div id="newsmain">
@@ -47,7 +47,7 @@
 				<?php the_content('&raquo;&raquo; Read More'); ?>
 				<br />
 				<div class="postinfo">
-					<span class="posthighlight"><img src="/Images/heartbullet.png" class="postheart"/> POSTED </span>
+					<span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span>
 					<?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> <span class="posthighlight">by </span>
 					<?php the_author_posts_link(); ?> <br />
 					<span class="responses"> <a href="<?php the_permalink() ?>#commentswrap">This post currently has <?php comments_number('no responses','one response','% responses'); ?></a> | <a href="<?php the_permalink() ?>#respond"> Leave a Comment </a></span>

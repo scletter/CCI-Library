@@ -46,13 +46,13 @@
 <div id="wrapper"> 
     <div id="outerheader" >
    	  <div id="headerwrap" > 
-        	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="/Images/logo358-16year.png" alt="Caring Clowns International Logo" id="logo"/>  </a>
+        	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/logo358-16year.png'?>" alt="Caring Clowns International Logo" id="logo"/>  </a>
 			<div id="utilities">
              	<div id="utilitiesmain">
 					<a href="/index.php/"> Home </a> | <a href="/contact-us/"> Contact Us </a> | <a href="/CCIPressKit.pdf"> Press Kit </a> |<?php get_search_form(); ?>
 				</div>
 				<div id="banner">
-					<a href="<?php echo esc_url( home_url( '/thank-you-for-successful-auction/' ) ); ?>"><img src="/Images/Auction-2018-Thanks_Off.png" alt="Auction-2018" /></a>
+					<a href="<?php echo esc_url( home_url( '/thank-you-for-successful-auction/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Auction-2018-Thanks_Off.png'?>" alt="Auction-2018" /></a>
 				</div>
         	</div><!--End Utilities -->
       </div><!--End Header Wrap -->
@@ -60,12 +60,12 @@
         
 	<div id="navwrap">   
 		<div id="navpanel" >
-			<a href="/about-us/"><img src="/Images/AboutUs_Off.png" class="about" alt="About Us"/></a>
-			<a href="/news/"><img src="/Images/News_Off.png" class="news" alt="News" /></a>
-			<a href="/calendar/"><img src="/Images/Calendar_Off.png" class="calendar" alt="Calendar"/></a>
-			<a href="/projects/"><img src="/Images/Outreach_Off.png" class="outreach" alt="Outreach"/></a>
-			<a href="/get-involved/"><img src="/Images/GetInvolved_Off.png" class="involved" alt="Get Involved"/></a>
-			<a href="/donate/"><img src="/Images/Donate_Off.png" class="donate pngfix" alt="donate" /></a>
+			<a href="/about-us/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/AboutUs_Off.png'?>" class="about" alt="About Us"/></a>
+			<a href="/news/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/News_Off.png'?>" class="news" alt="News" /></a>
+			<a href="/calendar/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Calendar_Off.png'?>" class="calendar" alt="Calendar"/></a>
+			<a href="/projects/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Outreach_Off.png'?>" class="outreach" alt="Outreach"/></a>
+			<a href="/get-involved/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/GetInvolved_Off.png'?>" class="involved" alt="Get Involved"/></a>
+			<a href="/donate/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Donate_Off.png'?>" class="donate pngfix" alt="donate" /></a>
 		</div> <!--End Nav Panel -->
 
 	</div><!--End Nav Wrapper -->

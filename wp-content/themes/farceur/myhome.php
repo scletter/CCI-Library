@@ -18,7 +18,7 @@
                    				   <div id="mainimg">
                                    
                    				   <div id="home-slideshow">
-                   				   <img src="Images/MainImgSpacer.png" class="spacer" alt="spacer"/>
+                   				   <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/MainImgSpacer.png'?>" class="spacer" alt="spacer"/>
                    				   <img src="/Images/MainImg1.jpg" class="wacky" style="display:none;" alt="MainImg1.jpg"/>
                      			   <img src="/Images/MainImg2.jpg" class="wacky" style="display:none;" alt="MainImg2.jpg"/>
                                    <img src="/Images/MainImg3.jpg" class="wacky" style="display:none;" alt="MainImg3.jpg"/>    
@@ -115,7 +115,7 @@
 					<div class="eventsbottom"></div>
 				</div>
 				<div id="amazonad">
-					<a href="https://smile.amazon.com/"><img src="/Images/AmazonSmileCCI.png" class="wacky" style="width: 90%; margin-top: 20px;" alt="AmazonSmileCCI.png"/></a>        
+					<a href="https://smile.amazon.com/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/AmazonSmileCCI.png'?>" class="wacky" style="width: 90%; margin-top: 20px;" alt="AmazonSmileCCI.png"/></a>        
 				</div>
 
 			</div>

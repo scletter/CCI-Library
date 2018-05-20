@@ -31,14 +31,14 @@ endif;
 				<br/>
 				<!-- Print date of Presidents Message -->
 				<div class="postinfo" style="margin-left: 25px;">
-						<span class="posthighlight"><img src="/Images/heartbullet.png" class="postheart"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> <br />
+						<span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> <br />
 				</div>
 
 			<h3>Member Resources</h3>
 				<ul>
-					<li><a href="#!" class="pdfopener" data-record-id="1">Vision Statement <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("Vision-Statement.pdf","id1"); ?></li>
-					<li><a href="#!" class="pdfopener" data-record-id="2">Members List <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("ccimembers.pdf","id2"); ?></li>
-					<li><a href="#!" class="pdfopener" data-record-id="3">Expectations and Responsibilites of Members <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("Member-Expectations-Commitments-25Sept16.pdf","id3"); ?></li>
+					<li><a href="#!" class="pdfopener" data-record-id="1">Vision Statement <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" alt="pdf-icon" /></a><?php farceur_pdf_popup("Vision-Statement.pdf","id1"); ?></li>
+					<li><a href="#!" class="pdfopener" data-record-id="2">Members List <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("ccimembers.pdf","id2"); ?></li>
+					<li><a href="#!" class="pdfopener" data-record-id="3">Expectations and Responsibilites of Members <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("Member-Expectations-Commitments-25Sept16.pdf","id3"); ?></li>
 				</ul>
 			<h3>Clown Resources</h3>		
 				<ul>
@@ -46,25 +46,25 @@ endif;
 						<ul>
 							<li>Introduction</li>
 							<ul>
-								<li><a href="#!" class="pdfopener" data-record-id="10">A Unique Organization <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-A-Brief-Description.pdf","id10"); ?></li>
-								<li><a href="#!" class="pdfopener" data-record-id="11">Pause for Thought <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-A-Clowns-Pause-for-Thought.pdf","id11"); ?></li>
-								<li><a href="#!" class="pdfopener" data-record-id="12">Member Value Statement <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Member-Value-Statement.pdf","id12"); ?></li>
+								<li><a href="#!" class="pdfopener" data-record-id="10">A Unique Organization <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-A-Brief-Description.pdf","id10"); ?></li>
+								<li><a href="#!" class="pdfopener" data-record-id="11">Pause for Thought <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-A-Clowns-Pause-for-Thought.pdf","id11"); ?></li>
+								<li><a href="#!" class="pdfopener" data-record-id="12">Member Value Statement <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Member-Value-Statement.pdf","id12"); ?></li>
 								
 							</ul>
-							<li><a href="#!" class="pdfopener" data-record-id="20">Your Clown Persona <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Your-Clown-Pesona.pdf","id20"); ?></li>
-							<li><a href="#!" class="pdfopener" data-record-id="21">Some Clowns of Caring Clowns International - Examples of Clown Faces <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Clown-Faces-1.pdf","id21"); ?></li>
-							<li><a href="#!" class="pdfopener" data-record-id="22">Facial Imagination <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Clown-Faces-2.pdf","id22"); ?></li>
-							<li><a href="#!" class="pdfopener" data-record-id="23">Clown Types <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Clown-Types.pdf","id23"); ?></li>
-							<li><a href="#!" class="pdfopener" data-record-id="24">Basic Steps to Applying / Removing Grease Paint <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Grease-Paint.pdf","id24"); ?></li>
-							<li><a href="#!" class="pdfopener" data-record-id="25">Clown Demeanor <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Clown-Demeanor.pdf","id25"); ?></li>
-							<li><a href="#!" class="pdfopener" data-record-id="26">Working with Children <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Clowning-With-Children.pdf","id26"); ?></li>
-							<li><a href="#!" class="pdfopener" data-record-id="27">Working with Other Clowns <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Working-With-Other-Clowns.pdf","id27"); ?></li>
+							<li><a href="#!" class="pdfopener" data-record-id="20">Your Clown Persona <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Your-Clown-Pesona.pdf","id20"); ?></li>
+							<li><a href="#!" class="pdfopener" data-record-id="21">Some Clowns of Caring Clowns International - Examples of Clown Faces <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Clown-Faces-1.pdf","id21"); ?></li>
+							<li><a href="#!" class="pdfopener" data-record-id="22">Facial Imagination <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Clown-Faces-2.pdf","id22"); ?></li>
+							<li><a href="#!" class="pdfopener" data-record-id="23">Clown Types <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Clown-Types.pdf","id23"); ?></li>
+							<li><a href="#!" class="pdfopener" data-record-id="24">Basic Steps to Applying / Removing Grease Paint <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Grease-Paint.pdf","id24"); ?></li>
+							<li><a href="#!" class="pdfopener" data-record-id="25">Clown Demeanor <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Clown-Demeanor.pdf","id25"); ?></li>
+							<li><a href="#!" class="pdfopener" data-record-id="26">Working with Children <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Clowning-With-Children.pdf","id26"); ?></li>
+							<li><a href="#!" class="pdfopener" data-record-id="27">Working with Other Clowns <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Working-With-Other-Clowns.pdf","id27"); ?></li>
 							<li>Elements of Clowning</li>
 							<ul>
-								<li><a href="#!" class="pdfopener" data-record-id="30">Comic Movement <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Comic-Movement.pdf","id30"); ?></li>
-								<li><a href="#!" class="pdfopener" data-record-id="31">The Gag <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-The-Gag.pdf","id31"); ?></li>
-								<li><a href="#!" class="pdfopener" data-record-id="32">Ballon Twisting <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Balloon-Twisting.pdf","id32"); ?></li>
-								<li><a href="#!" class="pdfopener" data-record-id="33">Props <img src="/Images/pdf-icon.png" alt="pdf-icon" /></a><?php farceur_pdf_popup("CCI-Props.pdf","id33"); ?></li>
+								<li><a href="#!" class="pdfopener" data-record-id="30">Comic Movement <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Comic-Movement.pdf","id30"); ?></li>
+								<li><a href="#!" class="pdfopener" data-record-id="31">The Gag <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-The-Gag.pdf","id31"); ?></li>
+								<li><a href="#!" class="pdfopener" data-record-id="32">Ballon Twisting <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Balloon-Twisting.pdf","id32"); ?></li>
+								<li><a href="#!" class="pdfopener" data-record-id="33">Props <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/pdf-icon.png'?>" /></a><?php farceur_pdf_popup("CCI-Props.pdf","id33"); ?></li>
 							</ul>
 						</ul>
 						<li>Organizations and Other</li>

@@ -10,7 +10,7 @@
 ?>
 
 <div id="loginSidebar">
-   <img src="/Images/Duffylogin.png" />
+   <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Duffylogin.png'?>" />
    <div style="background-color:#fcf3aa; padding: 10px 20px; font-size:12px; padding-bottom:10px;">
 	Welcome from Duffy, our President and Executive Director
    </div>
