@@ -287,9 +287,17 @@ img.donate {
 	top:20px;
 }
 
-#home-slideshow img.wacky,
-#home-slideshow img.spacer,
+#home-slideshow img.wacky {
+	position:absolute; 
+	left:0; 
+	top:0; 
+}
 
+#home-slideshow img.spacer {
+	position:static; 
+	display: block; 
+	margin: 0px auto;
+}
 
 #mainimgbox {
 	background: url(Images/10pxBorderBL.png); 
