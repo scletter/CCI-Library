@@ -42,13 +42,12 @@
 						<?php get_sidebar('myhome'); ?>
 					</table>
 			</div> 
-			
+		
 			<div id="amazonad">
 				<a href="https://smile.amazon.com/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/AmazonSmileCCI.png'?>" class="wacky" style="width: 90%; margin-top: 20px;" alt="AmazonSmileCCI.png"/></a>        
 			</div>
-
+		</div>	
 				
-		</div>
 		<div id="homeprimary">
 		<div id="news"  class="columnborder">    
 			<div class="eventstopwrap">

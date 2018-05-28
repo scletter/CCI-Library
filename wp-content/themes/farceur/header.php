@@ -72,7 +72,7 @@ function menuFunction() {
 	<div id="headertop">
 		<div id="utilities">
 			<div id="utilitiesmain">
-				<a href="/index.php/"> Home </a> | <a href="/contact-us/"> Contact Us </a> | <a href="/CCIPressKit.pdf"> Press Kit </a> |<?php get_search_form(); ?>
+				<a href="/index.php/"> Home </a> | <a href="/members/"> Members </a> | <a href="/CCIPressKit.pdf"> Press Kit </a> |<?php get_search_form(); ?>
 			</div>
         </div><!--End Utilities -->
 	</div>
@@ -106,6 +106,7 @@ function menuFunction() {
 		<a href="/about-us/" class="navbtn">About Us</a>
 		<a href="/join-us/" class="navbtn">Join Us</a>
 		<a href="/hire-us/" class="navbtn">Hire Us</a>
+		<a href="/contact-us/" class="navbtn">Contact Us</a>
 		<a href="/donate/" class="navbtn active">Donate</a>
 		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menuFunction()">&#9776;</a>  
 	</div>
