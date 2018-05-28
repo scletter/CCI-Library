@@ -4,16 +4,12 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.0.0
+ * @since farceur 1.1.0
  */
 ?>
 
 			</div><!--End Content Div -->
-            <div id="mainbottom"><div id="mainbottominside"></div></div>  
-		<div id="connect">
-			<span>Connect with us:</span>
-				<a href=""></a><a href="https://www.facebook.com/caringclownsinternational/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/f_logo.png'?>" alt="f_logo.png"/></a> <a href=""></a><a href="https://www.youtube.com/channel/UCQI8hQtlVDrVQ5CDMVcGFyw"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/youtube-icon.png'?>" alt="youtube-icon.png"/></a> | <a href="/contact-us">Email</a> | Mailing Address:  P.O. Box 75 Suquamish, WA 98392 
-		</div><!--end connect div-->
+            <div id="mainbottom"></div>  
 	</div> <!-- end mainwrap -->
   
 	<div id="outerfooter">
@@ -25,9 +21,9 @@
 			<div> <a class="bldul" href="http://www.guidestar.org/profile/80-0120296" target="_blank"><img style="width:70%" src="https://widgets.guidestar.org/gximage2?o=8217924&l=v4" /></a> </div>
 		</div><!--end footer div-->
 		<div class="clear"></div>
-	</div>
-	<div class="footerbottom">
+		<div class="footerbottom">
 		<p>Caring Clowns International is an all volunteer 501(c)(3) charitable nonprofit organization</p>
+		</div>
 	</div>
  </div><!--End Wrapper -->
   <?php wp_footer(); ?> 

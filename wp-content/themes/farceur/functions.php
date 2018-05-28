@@ -20,7 +20,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.0.0
+ * @since farceur 1.1.0
  */
 
 /*
@@ -151,7 +151,7 @@ function farceur_fonts_url() {
 /**
  * Enqueue scripts and styles for the front end.
  *
- * @since farceur 1.0.0
+ * @since farceur 1.1.0
  */
 function farceur_scripts_styles() {
 	/*
@@ -177,7 +177,7 @@ function farceur_scripts_styles() {
 	wp_enqueue_style( 'farceur-fonts', farceur_fonts_url(), array(), null );
 	
 		// Loads our main stylesheet.
-	wp_enqueue_style( 'farceur', get_stylesheet_uri(),array(), '4.9.20' );
+	wp_enqueue_style( 'farceur', get_stylesheet_uri(),array(), '1.1.0' );
 
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'farceur-ie', get_template_directory_uri() . '/css/ie.css', array( 'farceur-style' ), '2013-07-18' );

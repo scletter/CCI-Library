@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.0.0
+ * @since farceur 1.1.0
  */
 ?>
   
@@ -37,6 +37,30 @@
 	ga('send', 'pageview');
 </script>
 
+<script>
+// Add active class to the current button (highlight it)
+// var x = document.getElementById("myNavbar");
+// var navbtns = x.getElementsByClassName("navbtn");
+// for (var i = 0; i < navbtns.length; i++) {
+//   navbtns[i].addEventListener("click", function() {
+// 	var current = document.getElementsByClassName("active");
+// 	current[0].className = current[0].className.replace(" active", "");
+// 	this.className += " active";
+//  });
+// }
+</script>
+
+<script>
+function menuFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+
 <?php
 	wp_head();
 ?>
@@ -45,30 +69,47 @@
 <body <?php body_class(); ?>>
 <div id="wrapper"> 
     <div id="outerheader" >
-   	  <div id="headerwrap" > 
-        	<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/logo358-16year.png'?>" alt="Caring Clowns International Logo" id="logo"/>  </a>
-			<div id="utilities">
-             	<div id="utilitiesmain">
-					<a href="/index.php/"> Home </a> | <a href="/contact-us/"> Contact Us </a> | <a href="/CCIPressKit.pdf"> Press Kit </a> |<?php get_search_form(); ?>
-				</div>
-				<div id="banner">
-					<a href="<?php echo esc_url( home_url( '/thank-you-for-successful-auction/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Auction-2018-Thanks_Off.png'?>" alt="Auction-2018" /></a>
-				</div>
-        	</div><!--End Utilities -->
-      </div><!--End Header Wrap -->
-    </div><!--End Outer Header Wrap -->
-        
-	<div id="navwrap">   
-		<div id="navpanel" >
-			<a href="/about-us/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/AboutUs_Off.png'?>" class="about" alt="About Us"/></a>
-			<a href="/news/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/News_Off.png'?>" class="news" alt="News" /></a>
-			<a href="/calendar/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Calendar_Off.png'?>" class="calendar" alt="Calendar"/></a>
-			<a href="/projects/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Outreach_Off.png'?>" class="outreach" alt="Outreach"/></a>
-			<a href="/get-involved/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/GetInvolved_Off.png'?>" class="involved" alt="Get Involved"/></a>
-			<a href="/donate/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Donate_Off.png'?>" class="donate pngfix" alt="donate" /></a>
-		</div> <!--End Nav Panel -->
+	<div id="headertop">
+		<div id="utilities">
+			<div id="utilitiesmain">
+				<a href="/index.php/"> Home </a> | <a href="/contact-us/"> Contact Us </a> | <a href="/CCIPressKit.pdf"> Press Kit </a> |<?php get_search_form(); ?>
+			</div>
+        </div><!--End Utilities -->
+	</div>
+   	<div id="headerwrap"> 
+		<div class="logo-column logo-left">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/CCI-Logo-With-Clown-16year.png'?>" id="logo" alt="logo"/></a>
+			<div id="headermsg">
+				<?php $description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) : ?>
+					<p class="site-description"><?php echo $description; ?></p>
+				<?php endif; ?>
+			</div>
+		</div>
+		<div class="logo-column logo-right">
+			<div id="connect">
+				Mailing Address:  P.O. Box 75 Suquamish, WA 98392
+				<br/>
+				<a href="https://www.facebook.com/caringclownsinternational/"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/f_logo.png'?>" alt="f_logo.png"/></a>
+				<a href=""></a><a href="https://www.youtube.com/channel/UCQI8hQtlVDrVQ5CDMVcGFyw"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/youtube-icon.png'?>" alt="youtube-icon.png"/></a>
+			</div><!--end connect div-->
 
-	</div><!--End Nav Wrapper -->
+				</div><!-- .site-branding -->
+		</div>
+	</div><!--End Header Wrap -->
+    </div><!--End Outer Header Wrap -->
+
+	<div class="navbar" id="myNavbar">
+		<a href="/news/" class="navbtn">News</a>
+		<a href="/calendar/" class="navbtn">Calendar</a>
+		<a href="/projects/" class="navbtn">Outreach</a>
+		<a href="/about-us/" class="navbtn">About Us</a>
+		<a href="/join-us/" class="navbtn">Join Us</a>
+		<a href="/hire-us/" class="navbtn">Hire Us</a>
+		<a href="/donate/" class="navbtn active">Donate</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menuFunction()">&#9776;</a>  
+	</div>
+	
     <div class="clear"></div>
         
         <div id="mainwrap">
