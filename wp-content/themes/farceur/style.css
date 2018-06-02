@@ -88,6 +88,14 @@ a img:hover, #searchsubmit:hover, #navpanel img:hover {
 	font-style: italic;
 }
 
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
 /* -------------------------- 2.0 Repeatable Patterns  ------------------------*/
 /* Responsive images. Fluid images for posts, comments, and widgets */
 
@@ -116,7 +124,6 @@ img.size-large,
 
 /* --modified -- */
 #headerwrap {
-	padding-left: 3%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
@@ -132,14 +139,13 @@ img.size-large,
 
 /* --new -- */
 #headertop {
-	height: 20px;
+	height: 25px;
 }
 
 #headermsg {
 	font-size: .9em;
 	font-family: sans-serif;
-	margin-top: -20px;
-	padding-left: 15%; 
+	margin-top: -10px; 
 	font-style: italic;
 }
 
@@ -149,17 +155,27 @@ img.size-large,
 }
 
 .logo-left {
-	width: 65%;
+	width: 20%;
+}
+
+.logo-middle {
+	width: 60%;
 }
 
 .logo-right {
-	width: 25%
+	width: 20%
 }
 
 /* --modified -- */
 #logo {
-	width: 100%;	
-	padding-right: 1%;
+	width: 75%;	
+	padding-left: 10%;
+}
+
+/* --modified -- */
+#clownheader {
+	width: 75%;	
+	padding-left: 25%;
 }
 
 /* Home Page Connect */
@@ -172,6 +188,7 @@ img.size-large,
 	text-align: right;
 	font-size: .90em;
 	padding-top: 15%;
+	padding-right: 15%;
 }
 
 #connect span {
@@ -181,6 +198,7 @@ img.size-large,
 #connect img {
 	width: 30px;
 	vertical-align: right; 
+	padding-right: 2%
 }
 
 
@@ -232,6 +250,7 @@ input.search {
 	padding: 5px 0px 8px 0px;
 	margin: 0px;
 	background-position: left top;
+	overflow: hidden;
 }
 
 #searchsubmit {
@@ -657,16 +676,9 @@ input.search {
 	width: 93%; 
 	max-width: 922px;
 	margin: 0 auto;
-	
-/*	background-image: url(Images/FooterR.png); */
-/*	background-repeat: no-repeat;		*/
-/*	background-position: bottom right;	*/
 }
 
 #footer {
-/*	background-image: url(Images/FooterL.png); */
-/*	background-repeat: no-repeat;		*/
-/*	background-position: bottom left;	*/
 	padding-left: 13%;
 }
 
@@ -714,18 +726,8 @@ img.pagetitle {
 #localnavline,
 #newsline {
 	height: 5px; 
-	background-image: url(Images/LocalNavL.png); 
-	background-repeat: no-repeat; 
-	background-position: left; 
+	border-bottom: 5px solid #cc0000;
 	margin: 0 auto;
-}
-
-#localnavlineinside,
-#newslineinside {
-	height: 5px; 
-	background-image: url(Images/LocalNavR.png); 
-	background-repeat: no-repeat; 
-	background-position: right
 }
 
 /* Directors Page */
@@ -820,7 +822,6 @@ img.pagetitle {
 	padding: 10px 15px;
 }
 
-#newsletterpage ul,
 #archivespage ul {
 		margin-left: 25px;
 }
@@ -831,7 +832,6 @@ img.pagetitle {
 	padding: 0px;
 }
 
-#newsletterpage,
 #archivespage {
 	text-align: left;
 }

@@ -78,11 +78,14 @@ function menuFunction() {
 	</div>
    	<div id="headerwrap"> 
 		<div class="logo-column logo-left">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/CCI-Logo-With-Clown-16year.png'?>" id="logo" alt="logo"/></a>
+			<img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/clown.png'?>" id="clownheader" alt="logo"/></a>
+		</div>
+		<div class="logo-column logo-middle center-image">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/CCIlogo.png'?>" id="logo" alt="logo"/></a>
 			<div id="headermsg">
 				<?php $description = get_bloginfo( 'description', 'display' );
 				if ( $description || is_customize_preview() ) : ?>
-					<p class="site-description"><?php echo $description; ?></p>
+					<p class="site-description center"><?php echo $description; ?></p>
 				<?php endif; ?>
 			</div>
 		</div>
