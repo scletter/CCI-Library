@@ -25,10 +25,9 @@ Text Domain: farceur
 /*		6.0 Footer				 	*/
 /* 		7.0 Page Styling			*/
 /*		8.0 SideBar		 			*/
-/* 		9.0 Other					*/
-/* 		9.0 Other					*/
-/*		10.0 Page Specific 			*/
-
+/*		9.0 Other Page Styling		*/
+/* 		10.0 Widgets				*/
+/*      11.0 Member's Page          */
 
 /* -------------------------  1.0 General Styling ------------------------------*/
 
@@ -71,7 +70,6 @@ a:hover {
 	outline-style: none;
 }
 
-
 a img:hover, #searchsubmit:hover, #navpanel img:hover {
 	cursor: pointer; 
 }
@@ -94,7 +92,6 @@ a img:hover, #searchsubmit:hover, #navpanel img:hover {
     margin-right: auto;
     width: 50%;
 }
-
 
 /* -------------------------- 2.0 Repeatable Patterns  ------------------------*/
 /* Responsive images. Fluid images for posts, comments, and widgets */
@@ -197,7 +194,6 @@ img.size-large,
 	padding-right: 2%
 }
 
-
 /* --modified -- */
 #utilities {
 	text-align: right;
@@ -234,6 +230,10 @@ form {
 	position: relative; 
 	vertical-align: middle;
 	margin-top: 2px;	
+}
+
+#utilitiesmain a:hover{
+	font-weight: normal;
 }
 
 input.search {
@@ -528,46 +528,6 @@ input.search {
 	height: 28px;
 }
 	
-
-
-/* Red Highlight Box */
-
-.redBoxtop {
-	background-image: url(Images/newsTR.png);
-	background-repeat: no-repeat;
-	background-position: top right;
-	height: 20px;
-}
-
-.redBoxtopwrap {
-	background-image: url(Images/newsTL.png);
-	background-repeat: no-repeat;
-	background-position: top left;
-}
-
-.redBoxbottom {
-	background-image: url(Images/newsBR.png);
-	background-repeat: no-repeat;
-	background-position: bottom right;
-	height: 20px;
-}
-
-.redBoxbottomwrap {
-	background-image: url(Images/newsBL.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-}
-
-.redBoxcontent {
-	border-right-width: 4px;
-	border-left-width: 4px;
-	border-right-style: solid;
-	border-left-style: solid;
-	border-right-color: #cc0000;
-	border-left-color: #cc0000;
-}
-
-
 .titlewrap {
 	background-image: url(Images/titlebgl.png);  
 	background-repeat: no-repeat; 
@@ -607,11 +567,6 @@ input.search {
 	text-indent: 0px;
 }
 
-
-#utilitiesmain a:hover{
-	font-weight: normal;
-}
-
 #news a {
 	color: #3D6B99;
 	font-size: 15px;
@@ -621,8 +576,7 @@ input.search {
 #donate a,
 #involved a,
 #thanks a,
-#hireus a,
-#videopage .videoinfo .audiolink {
+#hireus a {
 	color: #CC0000;
 	font-size: 15px;
 	font-weight: bold;
@@ -633,8 +587,7 @@ input.search {
 #involved a:hover,
 #thanks a:hover,
 #hireus a:hover,
-#events a:hover,
-#videopage .videoinfo .audiolink:hover {
+#events a:hover {
 	text-decoration: underline; 
 	color: #cc0000;
 }
@@ -818,7 +771,6 @@ img.pagetitle {
 }
 
 #newspage li,
-#newsletterpage li,
 #archivespage li {
 	background-image: url(Images/goarrow.png);
 	background-repeat: no-repeat;
@@ -830,10 +782,15 @@ img.pagetitle {
 		margin-left: 25px;
 }
 
-
 #newspage ul {
 	margin: 10px 0px 10px 10px; 
 	padding: 0px;
+}
+
+#newspage img.resizeme {
+	width: 600px;
+	max-width: 723px; 
+	margin: 0 auto;
 }
 
 #archivespage {
@@ -886,42 +843,7 @@ img.pagetitle {
 	font-size: 12px; 
 }
 
-/* Donation Forms */	
 
-#donateform,
-#NepalDonateForm{
-	background-image: url(Images/donatebg.png); 
-	background-repeat: no-repeat;
-	height: 150px; 
-	width: 335px;
-	margin: 0 auto; 
-}
-
-
-#bearformsubmit,
-#HeartFormSubmit {
-    background-image: url(Images/donatebg3.png); 
-	background-repeat: no-repeat;
-	height: 200px; 
-	width: 260px;
-	padding: 2px; 
-	margin: 15px auto 5px auto;
-	text-align:center;
-}
-
-#HeartForm{
-	margin:0px;
-	padding:0px;
-	}
-
-.ambg img {
-    cursor: pointer;
-}
-
-#bearformsubmit .ambg,
-#HeartFormSubmit .ambg {
-	margin-top:10px; 
-}
 
 #whazupmain,
 #whazupmain #HeartFormSubmit {
@@ -942,7 +864,6 @@ img.pagetitle {
 #HeartFormSubmit .HeartTxt {
 	font-size: 17px;
 }
-
 
 #donateform #amazonbg,
 #NepalDonateForm #amazonbg,
@@ -987,19 +908,6 @@ img.pagetitle {
 	border-bottom: 4px solid white; 
 }
 
-.videoslink {
-	width: 191px; 
-	height: 82px;
-}
-
-.newslettertitle {
-	background-image: url(Images/Blog_NewsletterTitle.png);
-} 
-
-.videoslink {
-	margin-bottom: 20px;
-}
-
 .specialblogtitle {
 	background-image: url(Images/Blog_SpBlogTitle.png);
 }
@@ -1016,7 +924,6 @@ background-image: url(Images/blog_duffylink.png);
 	background-image: url(Images/Blog_OtherTitle.png);
 }
 
-.newslettermain,
 .archivesmain,
 .otherstuffmain,
 .duffysadmain,
@@ -1024,7 +931,6 @@ background-image: url(Images/blog_duffylink.png);
 	background-color: #fcf3aa; 
 }
 
-.newsletterbottom,
 .archivesbottom,
 .otherstuffbottom,
 .duffysadbottom,
@@ -1044,6 +950,13 @@ background-image: url(Images/blog_duffylink.png);
 	text-align: left;
 }
 
+#news_sidebar li {
+	background-image: url(Images/goarrow2.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding: 5px 25px;
+}
+
 #loginSidebar ul,
 #PeruSidebar ul {
 	padding: 10px 0px 10px 5px;
@@ -1055,14 +968,6 @@ background-image: url(Images/blog_duffylink.png);
 	padding: 10px 0px 10px 5px;
 	margin: 0px;
 	text-align: center;
-}
-
-
-#news_sidebar li {
-	background-image: url(Images/goarrow2.png);
-	background-repeat: no-repeat;
-	background-position: left;
-	padding: 5px 25px;
 }
 
 #loginSidebar li,
@@ -1078,6 +983,17 @@ background-image: url(Images/blog_duffylink.png);
 	background-position: left;
 }
 
+#loginSidebar,
+#news_sidebar,
+#PeruSidebar,
+#VietnamSidebar {
+  width:191px;
+  float:left;
+  margin-right:-250px;
+  position: relative;
+  left: 43px;
+}
+
 #VietnamSidebar li {
 	background-position: 30px 6px;
 }
@@ -1091,7 +1007,7 @@ background-image: url(Images/blog_duffylink.png);
     margin-bottom: 10px;
 }
 
-/* -------------------------  9.0 Other  ---------------------------------------*/
+/* -------------------------  9.0 Other Page Styling -------------------------------------*/
 
 .posttitle a{
 	color: #CC0000;
@@ -1102,6 +1018,16 @@ background-image: url(Images/blog_duffylink.png);
 
 .posttitle a:hover {
 	text-decoration: underline; 
+}
+
+#duffyheaderinfo,
+#posttitlecontent {
+	padding-left: 11px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 6px solid #FFE512;
+	border-radius: 10px;
+	height: 30px;  
 }
 
 .posthighlight {
@@ -1116,39 +1042,39 @@ background-image: url(Images/blog_duffylink.png);
 
 #newstitletop,
 #duffytop {
-	background-image: url(Images/BlogTitleTR.png);
-	background-repeat: no-repeat;
-	background-position: top right;
-	height: 11px;
+/*	background-image: url(Images/BlogTitleTR.png); */
+/*	background-repeat: no-repeat;
+/*	background-position: top right;	*/
+
 }
 
 #newstitletopwrap,
 #duffytopwrap {
-	background-image: url(Images/BlogTitleTL.png);
-	background-repeat: no-repeat;
-	background-position: top left;
+/*	background-image: url(Images/BlogTitleTL.png); */
+/*	background-repeat: no-repeat; */
+/*	background-position: top left; */
 }
 
 #newstitlebottom,
 #duffybottom {
-	background-image: url(Images/BlogTitleBR.png);
-	background-repeat: no-repeat;
-	background-position: bottom right;
+/*	background-image: url(Images/BlogTitleBR.png); */
+/*	background-repeat: no-repeat; */
+/*	background-position: bottom right; */
 	height: 11px;
 }
 
 #newstitlebottomwrap,
 #duffybottomwrap {
-	background-image: url(Images/BlogTitleBL.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
+/*	background-image: url(Images/BlogTitleBL.png); */
+/*	background-repeat: no-repeat; */
+/*	background-position: bottom left; */
 }
 
 #posttitlecontent,
 #duffyheaderinfo {
-	padding-left: 11px;
-	border-left: 3px solid #ffe512; 
-	border-right: 3px solid #ffe512;
+/*	padding-left: 11px;*/
+/*	border-left: 3px solid #ffe512; */
+/*	border-right: 3px solid #ffe512;*/
 }
 
 .newscontent {
@@ -1237,17 +1163,6 @@ background-image: url(Images/blog_duffylink.png);
   margin-right: 15px; 
 }
 
-#loginSidebar,
-#news_sidebar,
-#PeruSidebar,
-#VietnamSidebar {
-  width:191px;
-  float:left;
-  margin-right:-250px;
-  position: relative;
-  left: 43px;
-}
-
 #eventstable .date a{	
 	color: white; 
 	text-transform: uppercase; 
@@ -1308,7 +1223,6 @@ background-image: url(Images/blog_duffylink.png);
 	position: relative;
 	height: 15px;
 }
-
 
 #duffyheaderinfo #duffyprev {
 	position: absolute; 
@@ -1376,6 +1290,14 @@ background-image: url(Images/blog_duffylink.png);
 	float: right; 
 }
 
+#singletitle {
+	margin: 0px auto;
+	min-height: 52px; 
+	border: 4px solid #3399cc;
+	border-radius: 10px; 
+	background: #3399cc;
+}
+
 /* Single Post Page */	
 #singlepages h1{
 	color: #FFFFFF;
@@ -1384,27 +1306,27 @@ background-image: url(Images/blog_duffylink.png);
 	padding: 10px;
 }
 #singletitleL {
-	background-image: url(/Images/PageTitleBGL.png);
-	background-repeat: no-repeat;
-	background-position: top left;
-	min-height: 52px;
+/*	background-image: url(/Images/PageTitleBGL.png); */
+/*	background-repeat: no-repeat;*/
+/*	background-position: top left;*/
+/*	min-height: 52px;*/
 }
 #singletitleLB {
-	background-image: url(/Images/PageTitleBGLB.png);
-	background-repeat: no-repeat;
-	background-position: bottom left;
+/*	background-image: url(/Images/PageTitleBGLB.png);*/
+/*	background-repeat: no-repeat;*/
+/*	background-position: bottom left;*/
 }
 #singletitleRB {
-	background-image: url(/Images/PageTitleBGRB.png);
-	background-repeat: no-repeat;
-	background-position: bottom right;
+/*	background-image: url(/Images/PageTitleBGRB.png);*/
+/*	background-repeat: no-repeat;*/
+/*	background-position: bottom right;*/
 }
 #singletitleR {
-	background-image: url(/Images/PageTitleBGR.png);
-	margin-top: 10px;
-	background-repeat: no-repeat;
-	background-position: top right;
-	background-color:#3399CC;
+/*	background-image: url(/Images/PageTitleBGR.png);*/
+/*	margin-top: 10px;*/
+/*	background-repeat: no-repeat;*/
+/*	background-position: top right;*/
+/*	background-color:#3399CC;*/
 }
 #singlepostmainstuff {
 	padding-left: 25px;
@@ -1578,10 +1500,41 @@ img.holidayimg {
 	padding-right: 20px;
 }
 
-#newspage img.resizeme {
-	width: 600px;
-	max-width: 723px; 
-	margin: 0 auto;
+/* Donation Forms */	
+
+#donateform,
+#NepalDonateForm{
+	background-image: url(Images/donatebg.png); 
+	background-repeat: no-repeat;
+	height: 150px; 
+	width: 335px;
+	margin: 0 auto; 
+}
+
+
+#bearformsubmit,
+#HeartFormSubmit {
+    background-image: url(Images/donatebg3.png); 
+	background-repeat: no-repeat;
+	height: 200px; 
+	width: 260px;
+	padding: 2px; 
+	margin: 15px auto 5px auto;
+	text-align:center;
+}
+
+#HeartForm{
+	margin:0px;
+	padding:0px;
+	}
+
+.ambg img {
+    cursor: pointer;
+}
+
+#bearformsubmit .ambg,
+#HeartFormSubmit .ambg {
+	margin-top:10px; 
 }
 
 #perucontent,
@@ -1601,42 +1554,6 @@ img.holidayimg {
 
 .donateamnt input {
 	display: inline; 
-}
-
-#videopage {
-	text-align: left;
-	padding-left: 40px;  
-}
-
-#videopage img {
-	float: left; 
-	width: 200px;
-}
-
-.videoinfo {
-	float: left; 
-	padding-left: 10px;
-	max-width: 65%;
-	padding-top: 20px;
-}
-
-#videopage a{
-	color: #CC0000;
-	font-weight: bold; 
-	text-transform: uppercase; 
-	font-size: 20px;
-}
-
-.videotitle {
-	position: relative; 
-	right: -10px;
-	padding-top: 10px;
-	top: 0px;
-}
-
-#videopage p{
-	margin:0px;
-	padding:0px;
 }
 
 #whazupmain #singletitleR{
@@ -1716,11 +1633,9 @@ img.holidayimg {
 	float:left;
 }
 
-
 #thanks ul {
 	width: 300px;
 }
-
 
 #AnnualRepMain {
 	text-align: left;
@@ -1800,7 +1715,7 @@ img.holidayimg {
 	text-align:center;
 }
 	
-/* -------------------------  9.0 Widgets -------------------------------------*/
+/* -------------------------  10.0 Widgets -------------------------------------*/
 
 /* Font Size set to 13px, margin bottom set to 40px between widgets */
 .widget {
@@ -2072,7 +1987,6 @@ img.holidayimg {
 	text-align: right;
 }
 
-
 /* RSS Widget */
 
 .rsswidget img {
@@ -2097,8 +2011,7 @@ img.holidayimg {
 	margin-bottom: 0;
 }
 
-/*--------------------------- 10.0 Page Specific ------------------------------*/
-/*  Members' Page */
+/*--------------------------- 11.0 Member's Page  ------------------------------*/
 
 .president-message {
 	margin-left: 25px;
@@ -2208,12 +2121,10 @@ img.holidayimg {
 	text-shadow:1px 1px 0px #f5840c;
 }
 
-
 .pdfopener img {
 	width: 2.5%;
 	margin: auto;
 }
-
 
 /* Dialog styling */
 .ui-dialog .ui-dialog-titlebar {
@@ -2231,7 +2142,6 @@ img.holidayimg {
 .ui-dialog .ui-dialog-buttonpane {
 	background: #fcfcfc;
 }
-
 
 /* border color of table set to theme (3399cc), .5 intensity */
 .clownresources table,

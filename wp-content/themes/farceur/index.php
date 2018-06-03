@@ -31,16 +31,9 @@
   		<div class="newspost" id="post-<?php the_ID(); ?>">
     	
 			<div class="posttitle">
-                <div id="newstitletopwrap">
-					<div id="newstitletop"></div>
-				</div>
                  <div id="posttitlecontent">   		
 					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a> 
                 </div>      
- 
-                <div id="newstitlebottomwrap">
-					<div id="newstitlebottom"></div>
-				</div>   
 			</div>  
         
 			<div class="newscontent">

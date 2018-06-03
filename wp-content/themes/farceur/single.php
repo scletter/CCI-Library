@@ -71,7 +71,9 @@ get_header(); ?>
 				 
                  <div class="clear"></div>
 
-						<div id="singletitleR"><div id="singletitleRB"><div id="singletitleLB"><div id="singletitleL"><h1><?php the_title(); ?></h1></div></div></div></div>
+						<div id="singletitle">
+							<h1><?php the_title(); ?></h1>
+						</div>
 						<div id="singlepostmainstuff">
 									<?php the_content(); ?>
 									<div class="postinfo"><span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> <span class="posthighlight">by </span><?php the_author_posts_link(); ?>  </div>
@@ -112,7 +114,9 @@ get_header(); ?>
 				 
 					<div class="clear"></div>
 
-					<div id="singletitleR"><div id="singletitleRB"><div id="singletitleLB"><div id="singletitleL"><h1><?php the_title(); ?></h1></div></div></div></div>
+					<div id="singletitle">
+						<h1><?php the_title(); ?></h1>
+					</div>
 					<div id="singlepostmainstuff">
 								<?php the_content(); ?>
 								<div class="postinfo"><span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> <span class="posthighlight">by </span><?php the_author_posts_link(); ?>  </div>

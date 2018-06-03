@@ -24,20 +24,10 @@ $args=array(
    );
 ?>
     <div id="duffyheader">
-        	   <div id="duffytopwrap">
-                <div id="duffytop">
-                </div></div>
-                	<div id="duffyheaderinfo">
-                 	
-                  
-                    <a href="/duffys-adventure/table-of-contents">Table of Contents </a>
-                  
-
-                    <div class="clear"></div>
-                    </div>
-                <div id="duffybottomwrap">
-                <div id="duffybottom">
-                </div></div>
+		<div id="duffyheaderinfo">
+			<a href="/duffys-adventure/table-of-contents">Table of Contents </a>
+			<div class="clear"></div>
+		</div>
 
 <?php
 // Query the loop for Peru (Category 7) for the current page
