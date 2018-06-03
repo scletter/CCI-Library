@@ -1009,7 +1009,7 @@ background-image: url(Images/blog_duffylink.png);
 
 /* -------------------------  9.0 Other Page Styling -------------------------------------*/
 
-.posttitle a{
+.posttitle .duffytitle a{
 	color: #CC0000;
 	font-weight: bold; 
 	text-transform: uppercase; 
@@ -1038,43 +1038,6 @@ background-image: url(Images/blog_duffylink.png);
 #newsmain .postinfo {
 	font-size: 12px;
 	margin-bottom: 25px;
-}
-
-#newstitletop,
-#duffytop {
-/*	background-image: url(Images/BlogTitleTR.png); */
-/*	background-repeat: no-repeat;
-/*	background-position: top right;	*/
-
-}
-
-#newstitletopwrap,
-#duffytopwrap {
-/*	background-image: url(Images/BlogTitleTL.png); */
-/*	background-repeat: no-repeat; */
-/*	background-position: top left; */
-}
-
-#newstitlebottom,
-#duffybottom {
-/*	background-image: url(Images/BlogTitleBR.png); */
-/*	background-repeat: no-repeat; */
-/*	background-position: bottom right; */
-	height: 11px;
-}
-
-#newstitlebottomwrap,
-#duffybottomwrap {
-/*	background-image: url(Images/BlogTitleBL.png); */
-/*	background-repeat: no-repeat; */
-/*	background-position: bottom left; */
-}
-
-#posttitlecontent,
-#duffyheaderinfo {
-/*	padding-left: 11px;*/
-/*	border-left: 3px solid #ffe512; */
-/*	border-right: 3px solid #ffe512;*/
 }
 
 .newscontent {
@@ -1212,6 +1175,10 @@ background-image: url(Images/blog_duffylink.png);
 	vertical-align:top;
 }
 
+#duffyheader {
+	width: 98%;
+}
+
 #duffyadventure .duffysub {
 	font-size: 13px; 
 	color: #3399cc;
@@ -1305,29 +1272,7 @@ background-image: url(Images/blog_duffylink.png);
 	margin: 0px; 
 	padding: 10px;
 }
-#singletitleL {
-/*	background-image: url(/Images/PageTitleBGL.png); */
-/*	background-repeat: no-repeat;*/
-/*	background-position: top left;*/
-/*	min-height: 52px;*/
-}
-#singletitleLB {
-/*	background-image: url(/Images/PageTitleBGLB.png);*/
-/*	background-repeat: no-repeat;*/
-/*	background-position: bottom left;*/
-}
-#singletitleRB {
-/*	background-image: url(/Images/PageTitleBGRB.png);*/
-/*	background-repeat: no-repeat;*/
-/*	background-position: bottom right;*/
-}
-#singletitleR {
-/*	background-image: url(/Images/PageTitleBGR.png);*/
-/*	margin-top: 10px;*/
-/*	background-repeat: no-repeat;*/
-/*	background-position: top right;*/
-/*	background-color:#3399CC;*/
-}
+
 #singlepostmainstuff {
 	padding-left: 25px;
 }
