@@ -162,7 +162,7 @@ img.size-large,
 /* --modified -- */
 #logo {
 	width: 75%;	
-	padding-left: 10%;
+	padding-left: 12%;
 }
 
 /* --modified -- */
@@ -303,8 +303,8 @@ input.search {
 }
 
 .donatebtn {
-	width: 100%;
-    overflow: hidden;
+    border: none;
+    outline: none;
 	text-align:right!important;
 }
 
@@ -1002,12 +1002,11 @@ background-image: url(Images/blog_duffylink.png);
 	text-decoration: underline; 
 }
 
-#duffyheaderinfo,
 #posttitlecontent {
 	padding-left: 11px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	border: 6px solid #FFE512;
+	border: 6px solid #3399cc; 
 	border-radius: 10px;
 	height: 30px;  
 }
@@ -1121,6 +1120,15 @@ background-image: url(Images/blog_duffylink.png);
 #peru2011posts {
 	text-align: left; 
 	margin: 0px 20px;
+}
+
+#duffyheaderinfo {
+	padding-left: 11px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 6px solid #FFE512; 
+	border-radius: 10px;
+	height: 30px;  
 }
 
 .duffytitle,

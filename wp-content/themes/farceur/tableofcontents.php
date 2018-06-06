@@ -5,13 +5,15 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.0.0
+ * @since farceur 1.1.0
  */
 ?>
 
 <?php get_header(); ?><img src="<?php $key="PageTitleImage"; echo get_post_meta($post->ID, $key, true); ?>" class="pagetitle" />
 
-<span class="duffytitle">TABLE OF CONTENTS</span>
+<p>
+	<span class="duffytitle">TABLE OF CONTENTS</span>
+</p>
 
 <?php $my_query = new WP_Query('&order=asc&posts_per_page=50'); ?>
 
