@@ -1009,7 +1009,7 @@ background-image: url(Images/blog_duffylink.png);
 
 /* -------------------------  9.0 Other Page Styling -------------------------------------*/
 
-.posttitle .duffytitle a{
+.posttitle a{
 	color: #CC0000;
 	font-weight: bold; 
 	text-transform: uppercase; 
