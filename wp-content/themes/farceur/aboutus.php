@@ -5,7 +5,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.0.0
+ * @since farceur 1.1.0
  */
 ?>
 
