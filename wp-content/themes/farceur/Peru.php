@@ -65,8 +65,7 @@
 
 </div>
 
-<?php get_template_part('perusidebar'); ?>
-
+<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
 

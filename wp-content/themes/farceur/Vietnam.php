@@ -61,19 +61,6 @@ $args=array(
 
 </div>
 
-<div id="VietnamSidebar">
-   <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/Blog_SidekickPic.png'?>" />
-   <div style="background-color:#fcf3aa; padding: 0px 10px; font-size:12px; padding-bottom:10px;">
-    Sidekick here! Over the next few weeks I'll be documenting Sox's and my adventures whilst travelling across Vietnam! From embracing the culture to seeing the sights, we'll be volunteering in two orphanages, a blind school and visiting parts of the country where 'the essentials of life' aren't taken for granted!    
-   </div>
-   <div style="background-color:#fcf3aa; font-size:12px; border-top: 2px solid white; padding:0px 0px;">
-   
-   </div>
-   <div style="background-color:#fcf3aa; padding: 0px 10px; font-size:12px; padding-top:0px; ">
-   <ul><li><a href="<?php echo esc_url( home_url( '/news/' ) ); ?>" style="color:#CC0000; text-align:center;">Back to News </a></li></ul>
-	</div>
-   <div class="VietnamSidebarBottom"></div>
-</div>
-</div>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
 

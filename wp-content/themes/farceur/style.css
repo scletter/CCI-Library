@@ -935,9 +935,7 @@ background-image: url(Images/blog_duffylink.png);
 .otherstuffbottom,
 .duffysadbottom,
 .specialblogbottom,
-.PeruSidebarBottom,
-.loginSidebarBottom
-.VietnamSidebarBottom {
+.loginSidebarBottom {
 	background-image: url(Images/SidebarBottom.png);
 	width: 191px;
 	height: 9px; 
@@ -957,45 +955,29 @@ background-image: url(Images/blog_duffylink.png);
 	padding: 5px 25px;
 }
 
-#loginSidebar ul,
-#PeruSidebar ul {
+#loginSidebar ul {
 	padding: 10px 0px 10px 5px;
 	margin: 0px;
 	text-align: left;
 }
 
-#VietnamSidebar ul {
-	padding: 10px 0px 10px 5px;
-	margin: 0px;
-	text-align: center;
-}
-
-#loginSidebar li,
-#PeruSidebar li,
-#VietnamSidebar li{
+#loginSidebar li {
 	background-image: url(Images/goarrow2.png);
 	background-repeat: no-repeat;
 	padding: 5px 0px 5px 15px;
 }
 
-#loginSidebar li,
-#PeruSidebar li {
+#loginSidebar li {
 	background-position: left;
 }
 
 #loginSidebar,
-#news_sidebar,
-#PeruSidebar,
-#VietnamSidebar {
+#news_sidebar {
   width:191px;
   float:left;
   margin-right:-250px;
   position: relative;
   left: 43px;
-}
-
-#VietnamSidebar li {
-	background-position: 30px 6px;
 }
 
 .frontpage-sidebar h3 {
