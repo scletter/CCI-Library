@@ -106,8 +106,6 @@ img.size-large,
 }
 
 /* -------------------------  3.0 Header ---------------------------------------*/
-
-/* --modified -- */
 #outerheader {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
@@ -117,7 +115,6 @@ img.size-large,
 	background: #fff; 
 }
 
-/* --modified -- */
 #headerwrap {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
@@ -130,7 +127,6 @@ img.size-large,
     clear: both;
 }
 
-/* --new -- */
 #headertop {
 	height: 30px;
 }
@@ -159,20 +155,17 @@ img.size-large,
 	width: 20%
 }
 
-/* --modified -- */
 #logo {
 	width: 75%;	
 	padding-left: 12%;
 }
 
-/* --modified -- */
 #clownheader {
 	width: 75%;	
 	padding-left: 25%;
 }
 
 /* Home Page Connect */
-
 #connect {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
@@ -194,11 +187,9 @@ img.size-large,
 	padding-right: 2%
 }
 
-/* --modified -- */
 #utilities {
 	text-align: right;
 	position: relative;
-/*	right: 2px; */
 	top: 1%;
 	color: white; 
 }
@@ -257,13 +248,11 @@ input.search {
 	top: 3px;
 }
 
-
 @media screen and (max-width: 600px) {
 	#utilities { display: none; }
 }
 
 /* -------------------------  4.0 Navigation -----------------------------------*/
-
 .navbtn {
     border: none;
     outline: none;
@@ -293,7 +282,6 @@ input.search {
 }
 
 .navbar a.active {
-/*  background-color: #4CAF50; */
   background-color: #CC0000; 
   color: white;
 }
@@ -329,8 +317,7 @@ input.search {
   }
 }
 	
-/* -------------------------  5.0 Home Page ---------------------------------*/
-	
+/* -------------------------  5.0 Home Page ---------------------------------*/	
 #mainwrap {
 	width: 98%; 		
 	max-width: 922px; 	
@@ -427,7 +414,6 @@ input.search {
 /* Home Page Events and News */
 /* New Summary is primary content on left side (65%)  */
 /* Events is sidebar on right side (30%) - 5% gap */
-
 #eventnewswrapper {
 	padding: 0px 2% 2% 2%; 
 }
@@ -471,7 +457,8 @@ input.search {
 	margin-top: 10px;
 	padding: 10px 0px 10px 0px; 	
 }
-	
+
+/* Key Messages on Home Page */ 	
 /* web site yellow boarder */
 #pointswrap {
 	border-bottom: 6px solid #fff;  
@@ -529,10 +516,7 @@ input.search {
 }
 	
 .titlewrap {
-	background-image: url(Images/titlebgl.png);  
-	background-repeat: no-repeat; 
-	background-position: top left;
-	margin: 0px auto;
+	margin: 0px auto;   
 }
 
 .titlewrap h3 {
@@ -541,7 +525,6 @@ input.search {
     border-radius: 10px;
     background: #FCF3AA;
     padding: 10px 10px;
-    margin-bottom: 10px;
     font-weight: 700;
     margin: 0 0 24px 0;
     text-transform: uppercase;
