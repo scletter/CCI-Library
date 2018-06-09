@@ -2,7 +2,7 @@
  * Slideshow
  * Authors: Steven Letter
  * Theme: farceur
- * Version: 4.5
+ * Version: 1.1.0
  */
 jQuery(document).ready(function($){
     $('#home-slideshow img').hide();

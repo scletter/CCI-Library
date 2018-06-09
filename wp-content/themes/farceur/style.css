@@ -296,7 +296,7 @@ input.search {
 	text-align:right!important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
@@ -304,8 +304,8 @@ input.search {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .navbar.responsive .icon {
+@media screen and (max-width: 700px) {
+  .navbar .responsive .icon {
     position: absolute;
     right: 0;
     bottom:0;
@@ -315,6 +315,10 @@ input.search {
     display: block;
     text-align: left;
   }
+}
+
+#menubutton {
+	font-size:15px;
 }
 	
 /* -------------------------  5.0 Home Page ---------------------------------*/	
@@ -990,8 +994,7 @@ background-image: url(Images/blog_duffylink.png);
 	padding-top: 5px;
 	padding-bottom: 5px;
 	border: 6px solid #3399cc; 
-	border-radius: 10px;
-	height: 30px;  
+	border-radius: 10px; 
 }
 
 .posthighlight {

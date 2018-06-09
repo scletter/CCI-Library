@@ -2,7 +2,7 @@
  * Navigation highlights and accordion
  * Authors: Caring Clowns International
  * Theme: farceur
- * Version: 1.0.0
+ * Version: 1.1.0
  */
 jQuery(document).ready(function($){
 	
@@ -16,14 +16,7 @@ jQuery(document).ready(function($){
 		 function() {
 		  this.src = this.src.replace("_On","_Off");
 		 });
-		 
-	$("#banner img").hover(
-		 function()	{
-		  this.src = this.src.replace("_Off","_On");
-		 },
-		 function() {
-		  this.src = this.src.replace("_On","_Off");
-		  });
+
 
 	// This uses the getParam() function to extract the value of panel from the query
 	// string. The active property must be an integer, so parseInt() converts the value
@@ -44,7 +37,16 @@ jQuery(document).ready(function($){
 				active: defaultPanel
 		});
 	});
-		
+	
+	$('#menubutton').click(function() {
+		var x = document.getElementById("myNavbar");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	});
+	
 });
 
 //This function takes as an argument the name of a variable passed through
@@ -61,4 +63,5 @@ function getParam(name) {
 			} 
 		} 
 	return 0;
-}
+};
+

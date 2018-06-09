@@ -37,30 +37,6 @@
 	ga('send', 'pageview');
 </script>
 
-<script>
-// Add active class to the current button (highlight it)
-// var x = document.getElementById("myNavbar");
-// var navbtns = x.getElementsByClassName("navbtn");
-// for (var i = 0; i < navbtns.length; i++) {
-//   navbtns[i].addEventListener("click", function() {
-// 	var current = document.getElementsByClassName("active");
-// 	current[0].className = current[0].className.replace(" active", "");
-// 	this.className += " active";
-//  });
-// }
-</script>
-
-<script>
-function menuFunction() {
-    var x = document.getElementById("myNavbar");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
-}
-</script>
-
 <?php
 	wp_head();
 ?>
@@ -104,14 +80,14 @@ function menuFunction() {
 
 	<div class="navbar" id="myNavbar">
 		<a href="/news/" class="navbtn">News</a>
-		<a href="/calendar/" class="navbtn">Calendar</a>
-		<a href="/projects/" class="navbtn">Outreach</a>
 		<a href="/about-us/" class="navbtn">About Us</a>
+		<a href="/projects/" class="navbtn">Outreach</a>
 		<a href="/join-us/" class="navbtn">Join Us</a>
 		<a href="/hire-us/" class="navbtn">Hire Us</a>
 		<a href="/contact-us/" class="navbtn">Contact Us</a>
 		<a href="/donate/" class="navbtn active">Donate</a>
-		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menuFunction()">&#9776;</a>  
+<!--		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menuFunction()">&#9776;</a>   -->
+		<a class="icon" id="menubutton">&#9776;</a>  
 	</div>
 	
     <div class="clear"></div>

@@ -9,7 +9,8 @@
  */
 ?>
 
-<?php get_header(); ?><a href="<?php echo esc_url( home_url( '/peru/') ); ?>"><img src="<?php $key="PageTitleImage"; echo get_post_meta($post->ID, $key, true); ?>" class="pagetitle" /></a>
+<?php get_header(); ?>
+<a href="<?php echo esc_url( home_url( '/peru/') ); ?>"><img src="<?php $key="PageTitleImage"; echo get_post_meta($post->ID, $key, true); ?>" class="pagetitle" /></a>
 <div id="peruwrap">
 <div id="peruposts">
 

@@ -166,12 +166,12 @@ function farceur_scripts_styles() {
 		wp_enqueue_script( 'jquery-masonry' );
 	
 	// Loads JavaScript files with functionality specific to farceur.	
-	wp_enqueue_script( 'farceur-script-nav', get_template_directory_uri() . '/js/navigation_highlight.js', array( 'jquery', 'jquery-ui-accordion' ), '4.9.0' );
+	wp_enqueue_script( 'farceur-script-nav', get_template_directory_uri() . '/js/navigation_highlight.js', array( 'jquery', 'jquery-ui-accordion' ), '1.1.0' );
 
 	// Loads JavaScript files with functionality specific to farceur.	
-	wp_enqueue_script( 'farceur-script-pdf', get_template_directory_uri() . '/js/pdf.js', array( 'jquery', 'jquery-ui-dialog' ), '4.9.0' );
+	wp_enqueue_script( 'farceur-script-pdf', get_template_directory_uri() . '/js/pdf.js', array( 'jquery', 'jquery-ui-dialog' ), '1.1.0' );
 	
-	wp_enqueue_script( 'farceur-slideshow', get_template_directory_uri() . '/js/slideshow.js', array( 'jquery' ), 4.5 );
+	wp_enqueue_script( 'farceur-slideshow', get_template_directory_uri() . '/js/slideshow.js', array( 'jquery' ), '1.1.0' );
 
 	// Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
 	wp_enqueue_style( 'farceur-fonts', farceur_fonts_url(), array(), null );
