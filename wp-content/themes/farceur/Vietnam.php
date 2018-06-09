@@ -31,25 +31,23 @@ $args=array(
 
 <?php if ( $my_query->have_posts() ) : while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
-  		<div class="vietnampost" id="post-<?php the_ID(); ?>">
+  	<div class="vietnampost" id="post-<?php the_ID(); ?>">
 
-     <div class="posttitle">
-                <div id="newstitletopwrap">
-                <div id="newstitletop">
-                </div></div>
-                 <div id="posttitlecontent">   		
-                <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a> 
-                          </div>      
- 
-                <div id="newstitlebottomwrap">
-                <div id="newstitlebottom">
-                </div></div>
-                
-     </div>  
-       <div id="vietnamcontent"><?php the_content('&raquo;&raquo; Read More'); ?></div>
-    
-        <div class="postinfo vietnampostinfo"><span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> <span class="posthighlight">by </span><?php the_author_posts_link(); ?> <br /> <span class="responses"> <a href="<?php the_permalink() ?>#commentswrap">This post currently has <?php comments_number('no responses','one response','% responses'); ?></a> | <a href="<?php the_permalink() ?>#respond"> Leave a Comment </a></span></div><br />
-</div><div class="clear"></div>
+		<div class="posttitle">
+			<div id="posttitlecontent">   		
+					<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a> 
+			</div>      
+					
+		</div>  
+		<div id="vietnamcontent"><?php the_content('&raquo;&raquo; Read More'); ?></div>
+		
+		<div class="postinfo vietnampostinfo">
+			<span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> 
+			<span class="posthighlight">by </span><?php the_author_posts_link(); ?> <br />
+			<span class="responses"> <a href="<?php the_permalink() ?>#commentswrap">This post currently has <?php comments_number('no responses','one response','% responses'); ?></a> | <a href="<?php the_permalink() ?>#respond"> Leave a Comment </a></span>
+		</div><br />
+	</div>
+	<div class="clear"></div>
   
 
 <?php endwhile; else: ?>
