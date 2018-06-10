@@ -176,7 +176,10 @@ function farceur_scripts_styles() {
 	// Add Source Sans Pro and Bitter fonts, used in the main stylesheet.
 	wp_enqueue_style( 'farceur-fonts', farceur_fonts_url(), array(), null );
 	
-		// Loads our main stylesheet.
+	// Add Genericons, used in the main stylesheet.
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '1.1.0' );
+	
+	// Loads our main stylesheet.
 	wp_enqueue_style( 'farceur', get_stylesheet_uri(),array(), '1.1.0' );
 
 	// Loads the Internet Explorer specific stylesheet.
@@ -648,3 +651,84 @@ function farceur_pdf_popup ( $filename, $divid ) {
 	<?php
 }
 
+if ( ! function_exists( 'farceur_entry_date' ) ) :
+/**
+ * Print HTML with date information for current post.
+ *
+ * Create your own penelope_entry_date() to override in a child theme.
+ *
+ * @since farceur 2.0.0
+ *
+ * @param boolean $echo (optional) Whether to echo the date. Default true.
+ * @return string The HTML-formatted post date.
+ */
+function farceur_entry_date( $echo = true ) {
+	if ( has_post_format( array( 'chat', 'status' ) ) )
+		$format_prefix = _x( '%1$s on %2$s', '1: post format name. 2: date', 'farceur' );
+	else
+		$format_prefix = '%2$s';
+
+	$date = sprintf( '<span class="date"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></span>',
+		esc_url( get_permalink() ),
+		esc_attr( sprintf( __( 'Permalink to %s', 'farceur' ), the_title_attribute( 'echo=0' ) ) ),
+		esc_attr( get_the_date( 'c' ) ),
+		esc_html( sprintf( $format_prefix, get_post_format_string( get_post_format() ), get_the_date() ) )
+	);
+
+	if ( $echo )
+		echo $date;
+
+	return $date;
+}
+endif;
+
+
+if ( ! function_exists( 'farceur_post_meta' ) ) :
+/**
+ * Print HTML with meta information for current post: categories, tags, permalink, author, and date.
+ *
+ * Create your own farceur_post_meta() to override in a child theme.
+ *
+ * @since farceur 1.1.0
+ */
+function farceur_post_meta() {
+	
+	?>
+	<div class="postmetafooter">
+	<?php
+
+		
+		if ( ! has_post_format( 'link' ) && 'post' == get_post_type() )
+			?> 
+				<div class="postinfo">
+					<span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span>
+					<span class="posted-on"> <?php farceur_entry_date(); ?> </span>
+					<span class="byline">  <?php the_author_posts_link(); ?> </span>
+					<span class="comments-link"> <a href="<?php the_permalink() ?>#commentswrap"> <?php comments_number('0','1','% '); ?></a></span>
+					<span class="edit-link"><a href="<?php the_permalink() ?>#respond"> Leave a Comment </a></span>
+
+						<?php
+						// Translators: used between list items, there is a space after the comma.
+						$categories_list = get_the_category_list( __( ', ', 'farceur' ) );
+						if ( $categories_list ) {
+							echo '<span class="cat-links">' . $categories_list . '</span>';
+						}
+						
+						// Translators: used between list items, there is a space after the comma.
+						$tag_list = get_the_tag_list( '', __( ', ', 'farceur' ) );
+						if ( $tag_list ) {
+							echo '<span class="tags-links">' . $tag_list . '</span>';
+						}
+						?>
+						<?php
+						if (is_user_logged_in() ) {
+							?>
+							<span class="edit-link"><?php edit_post_link( __( 'Edit Post', 'farceur' ), '', '' ); ?></span>
+							<?php
+						} ?>
+				</div>
+	</div>
+	<?php
+
+}
+endif;

@@ -19,15 +19,16 @@ Text Domain: farceur
 /* ------------------------------- Table of Contents ---------------------------*/
 /* 		1.0 General Styling 		*/
 /* 		2.0 Repeatable Patterns		*/
-/*		3.0 Header 					*/
-/*		4.0 Navigation		 		*/
-/*		5.0 Home Page 		 		*/
-/*		6.0 Footer				 	*/
-/* 		7.0 Page Styling			*/
-/*		8.0 SideBar		 			*/
-/*		9.0 Other Page Styling		*/
-/* 		10.0 Widgets				*/
-/*      11.0 Member's Page          */
+/*		3.0 Genericons				*/
+/*		4.0 Header 					*/
+/*		5.0 Navigation		 		*/
+/*		6.0 Home Page 		 		*/
+/*		7.0 Footer				 	*/
+/* 		8.0 Page Styling			*/
+/*		9.0 SideBar		 			*/
+/*		10.0 Other Page Styling		*/
+/* 		11.0 Widgets				*/
+/*      12.0 Member's Page          */
 
 /* -------------------------  1.0 General Styling ------------------------------*/
 
@@ -105,7 +106,67 @@ img.size-large,
 	max-width: 100%;
 }
 
-/* -------------------------  3.0 Header ---------------------------------------*/
+/* -------------------------- 3.0 Genericons  ---------------------------------*/
+
+.social-navigation a:before,
+.secondary-toggle:before,
+.dropdown-toggle:after,
+.bypostauthor > article .fn:after,
+.comment-reply-title small a:before,
+.comment-navigation .nav-next a:after,
+.comment-navigation .nav-previous a:before,
+.posted-on:before,
+.byline:before,
+.cat-links:before,
+.tags-links:before,
+.comments-link:before,
+.entry-format:before,
+.edit-link:before,
+.full-size-link:before,
+.pagination .prev:before,
+.pagination .next:before,
+.image-navigation a:before,
+.image-navigation a:after,
+.format-link .entry-title a:after,
+.entry-content .more-link:after,
+.entry-summary .more-link:after,
+.author-link:after {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-family: "Genericons";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	speak: none;
+	text-align: center;
+	text-decoration: inherit;
+	text-transform: none;
+	vertical-align: top;
+}
+
+.posted-on:before { content: "\f307"; }
+
+.byline:before { content: "\f304"; }
+
+.cat-links:before {	content: "\f301";}
+
+.tags-links:before { content: "\f302";}
+
+.comments-link:before {	content: "\f300"; }
+
+.full-size-link:before { content: "\f402"; }
+
+.edit-link:before { content: "\f411"; }
+
+.cat-links:before { content: "\f301"} 
+
+.tag-links:before { content: "\f301" }
+
+
+/* -------------------------  4.0 Header ---------------------------------------*/
 #outerheader {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
@@ -321,7 +382,7 @@ input.search {
 	font-size:15px;
 }
 	
-/* -------------------------  5.0 Home Page ---------------------------------*/	
+/* -------------------------  6.0 Home Page ---------------------------------*/	
 #mainwrap {
 	width: 98%; 		
 	max-width: 922px; 	
@@ -598,7 +659,7 @@ input.search {
 }
 
 
-/* -------------------------  6.0 Footer --------------------------------------*/
+/* -------------------------  7.0 Footer --------------------------------------*/
 
 #footer div {
 	width: 15%; 
@@ -634,7 +695,7 @@ input.search {
 	font-size: .55em;
 }
 
-/* -------------------------  7.0 Page Styling ------------------------------------*/
+/* -------------------------  8.0 Page Styling ------------------------------------*/
 
 img.pagetitle {
 	width: 95%; 
@@ -878,7 +939,7 @@ img.pagetitle {
 	margin-bottom: 15px;
 }
 
-/* -------------------------  8.0 Sidebar --------------------------------------*/
+/* -------------------------  9.0 Sidebar --------------------------------------*/
 
 .newslettertitle,
 .archivestitle,
@@ -976,7 +1037,7 @@ background-image: url(Images/blog_duffylink.png);
     margin-bottom: 10px;
 }
 
-/* -------------------------  9.0 Other Page Styling -------------------------------------*/
+/* -------------------------  10.0 Other Page Styling -------------------------------------*/
 
 .posttitle a{
 	color: #CC0000;
@@ -995,6 +1056,13 @@ background-image: url(Images/blog_duffylink.png);
 	padding-bottom: 5px;
 	border: 6px solid #3399cc; 
 	border-radius: 10px; 
+}
+
+.postmetafooter {
+    padding-left: 30px;
+	padding-bottom: 10px;  
+	display: block;
+	font-size: 12px;
 }
 
 .posthighlight {
@@ -1112,7 +1180,8 @@ background-image: url(Images/blog_duffylink.png);
 	padding-left: 11px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	border: 6px solid #FFE512; 
+/*	border: 6px solid #FFE512;  */
+	border: 6px solid #3399cc; 
 	border-radius: 10px;
 	height: 30px;  
 }
@@ -1141,7 +1210,7 @@ background-image: url(Images/blog_duffylink.png);
 }
 
 .duffypost, .joyfulpost {
-	border-bottom: 3px solid #FFE512; 
+	border-bottom: 4px solid #3399cc; 
 }
 
 .joyfulimg {
@@ -1165,6 +1234,7 @@ background-image: url(Images/blog_duffylink.png);
 	text-align: center;
 	position: relative;
 	height: 15px;
+	margin-bottom: 4%; 
 }
 
 #duffyheaderinfo #duffyprev {
@@ -1252,6 +1322,18 @@ background-image: url(Images/blog_duffylink.png);
 #singlepostmainstuff {
 	padding-left: 25px;
 }
+
+
+#singlepostmainstuff .postinfo {
+	font-size: 12px;
+	margin-bottom: 10px;
+    vertical-align: text-top;
+}
+
+#singlepostmainstuff .postinfo img {
+    vertical-align: text-top;
+}
+
 
 .singleedit {
 	background-color: #FFE512;
@@ -1932,7 +2014,7 @@ img.holidayimg {
 	margin-bottom: 0;
 }
 
-/*--------------------------- 11.0 Member's Page  ------------------------------*/
+/*--------------------------- 12.0 Member's Page  ------------------------------*/
 
 .president-message {
 	margin-left: 25px;

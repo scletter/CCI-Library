@@ -38,14 +38,11 @@ $args=array(
         </div>      
                 
     </div>  
-    <div id="perucontent"><?php the_content('&raquo;&raquo; Read More'); ?></div>    
-    <div class="postinfo perupostinfo">
-		<span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span>
-		<?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>
-		<span class="posthighlight">by </span>
-		<?php the_author_posts_link(); ?> <br />
-		<span class="responses"> <a href="<?php the_permalink() ?>#commentswrap">This post currently has <?php comments_number('no responses','one response','% responses'); ?></a> | <a href="<?php the_permalink() ?>#respond"> Leave a Comment </a></span>
-	</div><br />
+    <div id="perucontent"><?php the_content('&raquo;&raquo; Read More'); ?></div> 
+
+	<?php farceur_post_meta(); ?>	
+	<br />
+	
 </div>
 <div class="clear"></div> 
 

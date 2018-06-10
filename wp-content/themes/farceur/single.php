@@ -76,7 +76,7 @@ get_header(); ?>
 						</div>
 						<div id="singlepostmainstuff">
 									<?php the_content(); ?>
-									<div class="postinfo"><span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> <span class="posthighlight">by </span><?php the_author_posts_link(); ?>  </div>
+									<?php farceur_post_meta(); ?>	
 									
 									<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'farceur' ), 'after' => '' ) ); ?>
 
@@ -101,7 +101,7 @@ get_header(); ?>
                
                 
                 </div>
-				<?php get_template_part('perusidebar'); ?>
+				<?php get_sidebar(); ?>
 				
 			</div>
     
@@ -119,7 +119,8 @@ get_header(); ?>
 					</div>
 					<div id="singlepostmainstuff">
 								<?php the_content(); ?>
-								<div class="postinfo"><span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> <span class="posthighlight">by </span><?php the_author_posts_link(); ?>  </div>
+								<br />
+								<?php farceur_post_meta(); ?>	
 								
 								<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'farceur' ), 'after' => '' ) ); ?>
 
