@@ -20,33 +20,28 @@ get_header(); ?>
 	<?php } 
 
 	else if (in_category('Duffys-Adventures')){?>
-    		<div id="duffyadventure">
-            <div class="duffypost" id="post-<?php the_ID(); ?>">
-            
+    	<div id="duffyadventure">
+        <div class="duffypost" id="post-<?php the_ID(); ?>">
             <div id="duffyheader">
-                   <div id="duffytopwrap">
-                    <div id="duffytop">
-                    </div></div>
-                        <div id="duffyheaderinfo">
-                        <div id="duffyprev"><?php previous_post_link('%link', '&laquo; %title', TRUE); ?>  </div>
+				<div id="duffyheaderinfo">
+                    <div id="duffyprev"><?php previous_post_link('%link', '&laquo; %title', TRUE); ?></div>
                       
-                      <a href="/duffys-adventure/table-of-contents">Table of Contents </a>
+						<a href="/duffys-adventure/table-of-contents">Table of Contents </a>
                       
-                         <div id="duffynext"><?php next_post_link('%link', '%title &raquo; ', TRUE); ?> </div>
-                        <div class="clear"></div>
-                        </div>
-                    <div id="duffybottomwrap">
-                    <div id="duffybottom">
-                    </div></div>
-                    
-          			 </div>
+                    <div id="duffynext"><?php next_post_link('%link', '%title &raquo; ', TRUE); ?> </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="duffybottomwrap">
+					<div id="duffybottom"></div>
+				</div>    
+            </div>
               
 				  <?php
                 global $more;
                 $more = 0;
                 ?>
             
-            	<div id="duffyimgwrap">
+            <div id="duffyimgwrap">
                 <?php 
                 $key="Duffy_Img"; 
                 $duffyimgs=get_post_meta($post->ID, $key, false);
@@ -54,13 +49,16 @@ get_header(); ?>
                     echo "<img src=\"$value\" class=\"duffyimg\" />";
            		 }
                 ?>
-                </div>
-                <div id="duffymain">
+            </div>
+            <div id="duffymain">
                 <span class="duffytitle"><?php the_title(); ?></span> <br />
                            <span class="duffysub"><?php $key="Duffy_Loc"; echo get_post_meta($post->ID, $key, true);?> <?php $key="Duffy_Date"; echo get_post_meta($post->ID, $key, true); ?></span>
                 <?php the_content(); ?>
 				<span class="colorlink"><?php next_post_link('%link', 'Next &raquo; ', TRUE); ?></span>
-                </div> </div><div class="clear"></div></div>
+             </div>
+	    </div>
+		<div class="clear"></div>
+		</div>
                 
                 <?php } 
 
