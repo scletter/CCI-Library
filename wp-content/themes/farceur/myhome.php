@@ -15,20 +15,22 @@
 		<div id="mainimgbox">
 			<div id="mainimg">
 					   
-					   <div id="home-slideshow">
+					<div id="home-slideshow">
 					   <img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/MainImgSpacer.png'?>" class="spacer" alt="spacer"/>
-					   <img src="/Images/MainImg1.jpg" class="wacky" style="display:none;" alt="MainImg1.jpg"/>
-					   <img src="/Images/MainImg2.jpg" class="wacky" style="display:none;" alt="MainImg2.jpg"/>
-					   <img src="/Images/MainImg3.jpg" class="wacky" style="display:none;" alt="MainImg3.jpg"/>    
-					   <img src="/Images/MainImg4.jpg" class="wacky" style="display:none;" alt="MainImg4.jpg"/> 
-					   <img src="/Images/MainImg5.jpg" class="wacky" style="display:none;" alt="MainImg5.jpg"/>
-					   <img src="/Images/MainImg6.jpg" class="wacky" style="display:none;" alt="MainImg6.jpg"/> 
-					   <img src="/Images/MainImg7.jpg" class="wacky" style="display:none;" alt="MainImg7.jpg"/> 
-					   <img src="/Images/MainImg8.jpg" class="wacky" style="display:none;" alt="MainImg8.jpg"/> 
-					   <img src="/Images/MainImg9.jpg" class="wacky" style="display:none;" alt="MainImg8.jpg"/>                                
-					   </div>  <!--End Slideshow -->  
-					   <div class="motto">
-					   <h1> We clown to free the "inner kid" in children and adults alike. <br/> As humanitarians, we fund life changing improvements for children in need. </h1></div>
+					   <img src="/Images/SlideShow1.jpg" class="wacky" style="display:none;" alt="SlideShow1.jpg"/>
+					   <img src="/Images/SlideShow2.jpg" class="wacky" style="display:none;" alt="SlideShow2.jpg"/>
+					   <img src="/Images/SlideShow3.jpg" class="wacky" style="display:none;" alt="SlideShow3.jpg"/>    
+					   <img src="/Images/SlideShow4.jpg" class="wacky" style="display:none;" alt="SlideShow4.jpg"/> 
+					   <img src="/Images/SlideShow5.jpg" class="wacky" style="display:none;" alt="SlideShow5.jpg"/>
+					   <img src="/Images/SlideShow6.jpg" class="wacky" style="display:none;" alt="SlideShow6.jpg"/> 
+					   <img src="/Images/SlideShow7.jpg" class="wacky" style="display:none;" alt="SlideShow7.jpg"/> 
+					   <img src="/Images/SlideShow8.jpg" class="wacky" style="display:none;" alt="SlideShow8.jpg"/> 
+					   <img src="/Images/SlideShow9.jpg" class="wacky" style="display:none;" alt="SlideShow9.jpg"/>
+					   <img src="/Images/SlideShow10.jpg" class="wacky" style="display:none;" alt="SlideShow10.jpg"/>					   
+					</div>  <!--End Slideshow -->  
+					<div class="motto">
+						<h1> We clown to free the "inner kid" in children and adults alike. <br/> As humanitarians, we fund life changing improvements for children in need. </h1>
+					</div>
 			</div><!--end mainimg div-->
 		</div>
 	</div>
