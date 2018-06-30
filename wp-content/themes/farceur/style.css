@@ -190,6 +190,7 @@ img.size-large,
 
 #headertop {
 	height: 30px;
+	overflow: hidden;
 }
 
 #headermsg {
