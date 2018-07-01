@@ -54,10 +54,10 @@
 	</div>
    	<div id="headerwrap"> 
 		<div class="logo-column logo-left">
-			<img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/clown.png'?>" id="clownheader" alt="logo"/></a>
+			<img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/clown.png'?>" id="Clownheader" alt="logo"/></a>
 		</div>
 		<div class="logo-column logo-middle center-image">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/CCIlogo.png'?>" id="logo" alt="logo"/></a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/CCILogo.png'?>" id="logo" alt="logo"/></a>
 			<div id="headermsg">
 				<?php $description = get_bloginfo( 'description', 'display' );
 				if ( $description || is_customize_preview() ) : ?>
