@@ -7,22 +7,22 @@
  * many new functions and markup changes introduced in 3.6.
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since farceur 1.1.0
+ * @subpackage farceur
+ * @since farceur 1.2.1
  */
 
 /**
  * Set up the WordPress core custom header arguments and settings.
  *
  * @uses add_theme_support() to register support for 3.4 and up.
- * @uses starkers_header_style() to style front-end.
- * @uses starkers_admin_header_style() to style wp-admin form.
- * @uses starkers_admin_header_image() to add custom markup to wp-admin form.
+ * @uses farceur_header_style() to style front-end.
+ * @uses farceur_admin_header_style() to style wp-admin form.
+ * @uses farceur_admin_header_image() to add custom markup to wp-admin form.
  * @uses register_default_headers() to set up the bundled header images.
  *
- * @since Starkers 4.0
+ * @since farceur 1.2.1
  */
-function starkers_custom_header_setup() {
+function farceur_custom_header_setup() {
 	$args = array(
 		// Text color and image (empty to use none).
 		'default-text-color'     => '220e10',
@@ -33,9 +33,9 @@ function starkers_custom_header_setup() {
 		'width'                  => 1600,
 
 		// Callbacks for styling the header and the admin preview.
-		'wp-head-callback'       => 'starkers_header_style',
-		'admin-head-callback'    => 'starkers_admin_header_style',
-		'admin-preview-callback' => 'starkers_admin_header_image',
+		'wp-head-callback'       => 'farceur_header_style',
+		'admin-head-callback'    => 'farceur_admin_header_style',
+		'admin-preview-callback' => 'farceur_admin_header_image',
 	);
 
 	add_theme_support( 'custom-header', $args );
@@ -48,44 +48,44 @@ function starkers_custom_header_setup() {
 		'circle' => array(
 			'url'           => '%s/images/headers/circle.png',
 			'thumbnail_url' => '%s/images/headers/circle-thumbnail.png',
-			'description'   => _x( 'Circle', 'header image description', 'starkers' )
+			'description'   => _x( 'Circle', 'header image description', 'farceur' )
 		),
 		'diamond' => array(
 			'url'           => '%s/images/headers/diamond.png',
 			'thumbnail_url' => '%s/images/headers/diamond-thumbnail.png',
-			'description'   => _x( 'Diamond', 'header image description', 'starkers' )
+			'description'   => _x( 'Diamond', 'header image description', 'farceur' )
 		),
 		'star' => array(
 			'url'           => '%s/images/headers/star.png',
 			'thumbnail_url' => '%s/images/headers/star-thumbnail.png',
-			'description'   => _x( 'Star', 'header image description', 'starkers' )
+			'description'   => _x( 'Star', 'header image description', 'farceur' )
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'starkers_custom_header_setup', 11 );
+add_action( 'after_setup_theme', 'farceur_custom_header_setup', 11 );
 
 /**
  * Load our special font CSS files.
  *
- * @since Starkers 4.0
+ * @since farceur 1.2.1
  */
-function starkers_custom_header_fonts() {
+function farceur_custom_header_fonts() {
 	// Add Source Sans Pro and Bitter fonts.
-	wp_enqueue_style( 'starkers-fonts', starkers_fonts_url(), array(), null );
+	wp_enqueue_style( 'farceur-fonts', farceur_fonts_url(), array(), null );
 
 	// Add Genericons font.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.03' );
 }
-add_action( 'admin_print_styles-appearance_page_custom-header', 'starkers_custom_header_fonts' );
+add_action( 'admin_print_styles-appearance_page_custom-header', 'farceur_custom_header_fonts' );
 
 /**
  * Style the header text displayed on the blog.
  *
  * get_header_textcolor() options: Hide text (returns 'blank'), or any hex value.
  *
- * @since Starkers 4.0
+ * @since farceur 1.2.1
  */
-function starkers_header_style() {
+function farceur_header_style() {
 	$header_image = get_header_image();
 	$text_color   = get_header_textcolor();
 
@@ -95,7 +95,7 @@ function starkers_header_style() {
 
 	// If we get this far, we have custom styles.
 	?>
-	<style type="text/css" id="starkers-header-css">
+	<style type="text/css" id="farceur-header-css">
 	<?php
 		if ( ! empty( $header_image ) ) :
 	?>
@@ -149,12 +149,12 @@ function starkers_header_style() {
 /**
  * Style the header image displayed on the Appearance > Header admin panel.
  *
- * @since Starkers 4.0
+ * @since farceur 1.2.1
  */
-function starkers_admin_header_style() {
+function farceur_admin_header_style() {
 	$header_image = get_header_image();
 ?>
-	<style type="text/css" id="starkers-admin-header-css">
+	<style type="text/css" id="farceur-admin-header-css">
 	.appearance_page_custom-header #headimg {
 		border: none;
 		-webkit-box-sizing: border-box;
@@ -215,9 +215,9 @@ function starkers_admin_header_style() {
  *
  * This callback overrides the default markup displayed there.
  *
- * @since Starkers 4.0
+ * @since farceur 1.2.1
  */
-function starkers_admin_header_image() {
+function farceur_admin_header_image() {
 	$style = 'color: #' . get_header_textcolor() . ';';
 	if ( ! display_header_text() ) {
 		$style = 'display: none;';
