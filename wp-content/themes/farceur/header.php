@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.1.0
+ * @since farceur 1.2.1
  */
 ?>
   
@@ -18,9 +18,7 @@
 	<link rel="Shortcut Icon" href="/CCIfave.ico"/>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<meta name="description" content="We clown to free the inner kid in children and adults alike. As humanitarians, we fund life changing improvements for children in need." />
 	<meta name="keywords" content="caring, clowns, clown, clowning, international, children, non-profit" />
-	<title><?php wp_title(); ?></title>
 
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
