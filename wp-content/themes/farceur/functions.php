@@ -20,7 +20,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.2.0
+ * @since farceur 1.2.1
  */
 
 /*
@@ -51,18 +51,15 @@ if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
  * @uses register_nav_menu() To add support for a navigation menu.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
- * @since farceur 1.2.0
+ * @since farceur 1.2.1
  */
 function farceur_setup() {
+
 	/*
-	 * Makes farceur available for translation.
-	 *
-	 * Translations can be added to the /languages/ directory.
-	 * If you're building a theme based on farceur, use a find and
-	 * replace to change 'farceur' to the name of your theme in all
-	 * template files.
+	 * Make theme available for translation.
+	 * Translations can be filed at WordPress.org. See example: https://translate.wordpress.org/projects/wp-themes/twentyfifteen
 	 */
-	load_theme_textdomain( 'farceur', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'fareur' );
 
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
