@@ -20,7 +20,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.1.0
+ * @since farceur 1.2.0
  */
 
 /*
@@ -51,7 +51,7 @@ if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
  * @uses register_nav_menu() To add support for a navigation menu.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
- * @since farceur 1.0.0
+ * @since farceur 1.2.0
  */
 function farceur_setup() {
 	/*
@@ -97,7 +97,7 @@ function farceur_setup() {
 	 * "standard" posts and pages.
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 604, 270, true );
+	set_post_thumbnail_size( 60, 60, true );
 
 	// This theme uses its own gallery styles.
 	add_filter( 'use_default_gallery_style', '__return_false' );
@@ -151,7 +151,7 @@ function farceur_fonts_url() {
 /**
  * Enqueue scripts and styles for the front end.
  *
- * @since farceur 1.1.0
+ * @since farceur 1.2.0
  */
 function farceur_scripts_styles() {
 	/*
@@ -180,7 +180,7 @@ function farceur_scripts_styles() {
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '1.1.0' );
 	
 	// Loads our main stylesheet.
-	wp_enqueue_style( 'farceur', get_stylesheet_uri(),array(), '1.1.0' );
+	wp_enqueue_style( 'farceur', get_stylesheet_uri(),array(), '1.2.0' );
 
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'farceur-ie', get_template_directory_uri() . '/css/ie.css', array( 'farceur-style' ), '2013-07-18' );

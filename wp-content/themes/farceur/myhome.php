@@ -5,7 +5,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.1.0
+ * @since farceur 1.2.0
  */
 ?>
 
@@ -59,14 +59,27 @@
 			<div class="eventscontent">
 				<div class="titlewrap"><h3> <a href="/news">NEWS </a></h3></div>
 								
+				
 				<!-- Use WP Query Class to get posts with category 1 (News)and display first 6 posts -->
 				<?php $my_query = new WP_Query('&cat=1&posts_per_page=6'); ?>
 				<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-								
-				<ul class="lastul"> 
-					<li> <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a> </li>
-					<li class="posted"> <span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart" alt="heartbullet.png"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> </li>
-				</ul><?php endwhile; ?>                                  
+					<ul class="lastul">
+						<li class="newsitem">
+							<?php // Post thumbnail.
+								if (has_post_thumbnail() ) {
+									the_post_thumbnail();
+								}
+							?>
+						</li>
+						</li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+						</li>
+						<li class="posted"> <span class="posthighlight"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/Images/heartbullet.png'?>" class="postheart" alt="heartbullet.png"/> POSTED </span><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> </li>
+					</ul>
+					<div class="newsitemend"></div>
+
+				
+				<?php endwhile; ?>               
+
 			</div>  
 			<div class="eventstop"></div>			
 		</div>

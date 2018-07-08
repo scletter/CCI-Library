@@ -4,7 +4,7 @@
 Theme Name: farceur
 Theme URI: http://caringclownsinternational.org
 Description: A Wordpress theme for Caring Clowns International site originally based on Twenty-Ten theme
-Version: 1.1.0
+Version: 1.2.0
 Author: Steven Letter
 Author URI:
 License: GNU General Public License v2 or later
@@ -512,6 +512,23 @@ input.search {
 .eventscontent {
 	margin: 0px; 
 	padding: 0px 4%; 
+}
+
+.newsitem {
+	text-align: left;
+
+}
+
+.newsitemend {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 2%;
+	clear: both;
+}
+
+.newsitem img {
+	float: left;
+	vertical-align: middle;
+	padding-right: 2%;
 }
 
 .columnborder {
