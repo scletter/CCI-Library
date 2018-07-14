@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.0.0
+ * @since farceur 1.2.2
  */
 
 get_header(); ?>
@@ -22,7 +22,6 @@ get_header(); ?>
 <?php else : ?>
 					<h2><?php _e( 'Nothing Found', 'farceur' ); ?></h2>
 					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'farceur' ); ?></p>
-					<?php get_search_form(); ?>
 <?php endif; ?>
 </div><!--enddiv-->
 <?php get_sidebar(); ?>
