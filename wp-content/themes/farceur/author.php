@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.0.0
+ * @since farceur 1.2.2
  */
 
 get_header(); ?>
@@ -21,9 +21,10 @@ get_header(); ?>
 	if ( have_posts() )
 		the_post();
 ?>
+				<h1><?php printf( __( 'Author Archives: %s', 'farceur' ), '' . get_the_author() ); ?></h1>
+				<br /><br />
 
-				<h1><?php printf( __( 'Author Archives: %s', 'farceur' ), "<a class='url fn n' href='" . get_author_posts_url( get_the_author_meta( 'ID' ) ) . "' title='" . esc_attr( get_the_author() ) . "' rel='me'>" . get_the_author() . "</a>" ); ?></h1><br /><br />
-
+				
 <?php
 // If a user has filled out their description, show a bio on their entries.
 if ( get_the_author_meta( 'description' ) ) : ?>
