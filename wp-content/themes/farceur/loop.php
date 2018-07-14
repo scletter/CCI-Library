@@ -76,8 +76,9 @@
 
 			<a href="<?php echo get_term_link( _x('gallery', 'gallery category slug', 'farceur'), 'category' ); ?>" title="<?php esc_attr_e( 'View posts in the Gallery category', 'farceur' ); ?>"><?php _e( 'More Galleries', 'farceur' ); ?></a>
 				|
-			<?php comments_popup_link( __( 'Leave a comment', 'farceur' ), __( '1 Comment', 'farceur' ), __( '% Comments', 'farceur' ) ); ?>
-			<?php edit_post_link( __( 'Edit', 'farceur' ), '|', '' ); ?>
+			<div id="postinfo">
+				<?php farceur_post_meta(); ?>	
+			</div>
 
 
 <?php /*----------------------------------------------------- How to display posts in the asides category ---------------------------------------------------------------------*/ ?>
@@ -89,19 +90,15 @@
 			<?php else : ?>
 				<?php the_content( __( 'Continue reading &raquo;', 'farceur' ) ); ?>
 			<?php endif; ?>
-
-			<?php farceur_posted_on(); ?>
-			|
-			<?php comments_popup_link( __( 'Leave a comment', 'farceur' ), __( '1 Comment', 'farceur' ), __( '% Comments', 'farceur' ) ); ?>
-			<?php edit_post_link( __( 'Edit', 'farceur' ), '| ', '' ); ?>
+			
+			<div id="postinfo">
+				<?php farceur_post_meta(); ?>	
+			</div>
 
 <?php /*----------------------------------------------------- How to display all other posts. ----------------------------------------------------------------------*/ ?>
 
 	<?php else : ?>
 			<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'farceur' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-            <div id="postedon">
-			<?php farceur_posted_on(); ?>
-            </div>
 
 			<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
 					<?php the_excerpt(); ?>
@@ -109,25 +106,11 @@
 					<?php the_content( __( 'Continue reading &raquo;', 'farceur' ) ); ?>
 					<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'farceur' ), 'after' => '' ) ); ?>
 			<?php endif; ?>
-			<div id="postinfo">
 			
-			<?php if ( count( get_the_category() ) ) : ?>
-                -
-					<?php printf( __( 'Posted in %2$s', 'farceur' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
-					|
-			<?php endif; ?>
-			<?php
-				$tags_list = get_the_tag_list( '', ', ' );
-				if ( $tags_list ):
-			?>
-				<?php printf( __( 'Tagged %2$s', 'farceur' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
-					|
-				<?php endif; ?>
-				<?php comments_popup_link( __( 'Leave a comment', 'farceur' ), __( '1 Comment', 'farceur' ), __( '% Comments', 'farceur' ) ); ?>
-				<?php edit_post_link( __( 'Edit', 'farceur' ), '| ', '' ); ?>
-                </div>
-
-				<?php comments_template( '', true ); ?>
+			<div id="postinfo">
+				<?php farceur_post_meta(); ?>	
+			</div>
+			<?php comments_template( '', true ); ?>
 
 	<?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>
 
