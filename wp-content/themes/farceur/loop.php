@@ -101,7 +101,6 @@
 			<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'farceur' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
             <div id="postedon">
 			<?php farceur_posted_on(); ?>
-			<?php printf("DEBUG: loop");?>
             </div>
 
 			<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
