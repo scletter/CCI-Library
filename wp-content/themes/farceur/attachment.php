@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.0.0
+ * @since farceur 1.3.0
  */
 
 get_header(); ?>
@@ -83,13 +83,11 @@ get_header(); ?>
 					?></a>
 					</p>
 
-					<?php // display previous and next image link //?>
-					<?php printf ( '&laquo; Previous:' . ' '); ?>
-					<?php  previous_image_link( false ); ?>
-					
-					<?php printf ( ' | ' . 'Next: ' . ' '); ?>
-					<?php  next_image_link( false ); ?>
-					<?php printf ( ' &raquo;'); ?>
+					<nav id="image-navigation" class="navigation image-navigation">
+						<div class="nav-links">
+							<div class="nav-previous"><?php previous_image_link( false, __( 'Previous Image', 'farceur' ) ); ?></div><div class="nav-next"><?php next_image_link( false, __( 'Next Image', 'farceur' ) ); ?></div>
+						</div><!-- .nav-links -->
+					</nav><!-- .image-navigation -->
 					
  
 		<?php
