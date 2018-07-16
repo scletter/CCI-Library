@@ -57,11 +57,7 @@
 				)
 			);
 	?>
-	
 
-	<!-- Print the links for Next and Previous Pages --> 
-	<?php // next_posts_link( __( '&laquo; Older posts', 'farceur' ) ); ?>
-	<?php //previous_posts_link( __( '| Newer posts &raquo;', 'farceur' ) ); ?>
 </div>
 
 

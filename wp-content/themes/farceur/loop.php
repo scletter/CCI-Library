@@ -15,7 +15,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.2.2
+ * @since farceur 1.3.0
  */
 ?>
 
@@ -119,6 +119,14 @@
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
 				<br /><br />
-				<?php next_posts_link( __( '&laquo; Older posts', 'farceur' ) ); ?>
-				<?php previous_posts_link( __( '| Newer posts &raquo;', 'farceur' ) ); ?>
+			<?php
+			// Previous/next page navigation.
+			the_posts_pagination(
+				array(
+					'prev_text'          => __( 'Previous page', 'farceur' ),
+					'next_text'          => __( 'Next page', 'farceur' ),
+					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'farceur' ) . ' </span>',
+				)
+			);
+			?>
 <?php endif; ?>

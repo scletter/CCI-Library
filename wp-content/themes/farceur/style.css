@@ -116,6 +116,14 @@ img.size-large,
 .comment-reply-title small a:before,
 .pagination .prev:before,
 .pagination .next:before,
+.posted-on:before,
+.byline:before,
+.cat-links:before,
+.tags-links:before,
+.comments-link:before,
+.entry-format:before,
+.edit-link:before,
+.full-size-link:before,
 .pagination .nav-links:before,
 .pagination .nav-links:after,
 .search-submit:before {
@@ -135,6 +143,15 @@ img.size-large,
 	vertical-align: top;
 }
 
+.posted-on:before { content: "\f307"; }
+.byline:before { content: "\f304"; }
+.cat-links:before {	content: "\f301";}
+.tags-links:before { content: "\f302";}
+.comments-link:before {	content: "\f300"; }
+.full-size-link:before { content: "\f402"; }
+.edit-link:before { content: "\f411"; }
+.cat-links:before { content: "\f301"} 
+.tag-links:before { content: "\f301" }
 
 /* -------------------------  4.0 Header ---------------------------------------*/
 #outerheader {
