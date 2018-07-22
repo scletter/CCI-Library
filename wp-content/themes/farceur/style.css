@@ -1152,12 +1152,6 @@ img.pagetitle {
 }
 
 
-
-#whazupmain,
-#whazupmain #HeartFormSubmit {
-	float: left;
-}
-
 #donateform,
 #NepalDonateForm {
 		padding: 15px 5px; 
@@ -1347,9 +1341,9 @@ background-image: url(Images/blog_duffylink.png);
 }
 
 .newscontent .postheart {
-	position: relative; 
-	top: 2px; 
-	margin-right: 3px;
+/*	position: relative;  */
+/*	top: 2px; 			  */
+/*	margin-right: 3px;	*/
 }
 
 .posted .postheart {
@@ -1821,19 +1815,6 @@ img.holidayimg {
 	display: inline; 
 }
 
-#whazupmain #singletitleR{
-	margin: 0px 20px;
-	margin-top: 0px; 
-}
-
-#whazupmain #singletitleR h1{
-	margin-top: 0px;
-	text-align: left; 
-	color: white; 
-	padding-top: 10px; 
-	padding-left: 20px;
-}
-
 .highlightblue {
 	color: #3399cc;
 }
@@ -1842,33 +1823,8 @@ img.holidayimg {
 	text-decoration: underline;
 }
 
-
-#whazupmain {
-	padding: 0px 30px;
-}
-
-#whazupmain a{
-	color: #CC0000;
-	font-weight: bold; 
-}
-
-#whazupmain a:hover{
-	text-decoration: underline;
-}
-
-#whazupmain .newslettermar {
-	width: 100%;
-	max-width: 751px;
-}
-
 .newscontent .maxwidth{
 	width: 100%;
-}
-
-
-.newscontent .whazuprel {
-	width: 40%; 
-	margin-left: 30%;
 }
 
 #HeartRegister {

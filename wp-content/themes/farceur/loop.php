@@ -52,7 +52,6 @@
 
 	<?php if ( in_category( _x('gallery', 'gallery category slug', 'farceur') ) ) : ?>
 			<h2><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'farceur' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			<?php farceur_posted_on(); ?>
 
 			<?php if ( post_password_required() ) : ?>	
 							<?php the_content(); ?>
@@ -76,9 +75,7 @@
 
 			<a href="<?php echo get_term_link( _x('gallery', 'gallery category slug', 'farceur'), 'category' ); ?>" title="<?php esc_attr_e( 'View posts in the Gallery category', 'farceur' ); ?>"><?php _e( 'More Galleries', 'farceur' ); ?></a>
 				|
-			<div id="postinfo">
-				<?php farceur_post_meta(); ?>	
-			</div>
+			<?php farceur_post_meta(); ?>	
 
 
 <?php /*----------------------------------------------------- How to display posts in the asides category ---------------------------------------------------------------------*/ ?>
@@ -91,9 +88,8 @@
 				<?php the_content( __( 'Continue reading &raquo;', 'farceur' ) ); ?>
 			<?php endif; ?>
 			
-			<div id="postinfo">
-				<?php farceur_post_meta(); ?>	
-			</div>
+
+			<?php farceur_post_meta(); ?>	
 
 <?php /*----------------------------------------------------- How to display all other posts. ----------------------------------------------------------------------*/ ?>
 
@@ -107,9 +103,8 @@
 					<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'farceur' ), 'after' => '' ) ); ?>
 			<?php endif; ?>
 			
-			<div id="postinfo">
-				<?php farceur_post_meta(); ?>	
-			</div>
+			<?php farceur_post_meta(); ?>	
+
 			<?php comments_template( '', true ); ?>
 
 	<?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>
