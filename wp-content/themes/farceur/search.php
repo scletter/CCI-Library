@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage farceur
- * @since farceur 1.2.2
+ * @since farceur 1.3.0
  */
 
 get_header(); ?>
